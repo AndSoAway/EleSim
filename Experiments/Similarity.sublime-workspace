@@ -1,0 +1,555 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cur",
+				"cur_fields"
+			],
+			[
+				"line",
+				"linesep"
+			],
+			[
+				"ln",
+				"line_parts"
+			],
+			[
+				"p_",
+				"p_d"
+			],
+			[
+				"P",
+				"P_D"
+			],
+			[
+				"p",
+				"p_d"
+			],
+			[
+				"cu",
+				"cur_fields"
+			],
+			[
+				"s",
+				"split"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"leas",
+				"least_area"
+			],
+			[
+				"l",
+				"least_sim"
+			],
+			[
+				"least",
+				"least_sim"
+			],
+			[
+				"mtr",
+				"mtr_arr"
+			],
+			[
+				"fl",
+				"flnm2"
+			],
+			[
+				"f",
+				"flnm1"
+			],
+			[
+				"mt",
+				"mtr_cnt"
+			],
+			[
+				"m",
+				"mtr_cnt"
+			],
+			[
+				"li",
+				"line"
+			],
+			[
+				"lin",
+				"linesep"
+			],
+			[
+				"rec",
+				"record"
+			],
+			[
+				"r",
+				"r_idc"
+			],
+			[
+				"fi",
+				"field_idc"
+			],
+			[
+				"re",
+				"record_count"
+			],
+			[
+				"cur_",
+				"cur_r_idc"
+			],
+			[
+				"out",
+				"output_file"
+			],
+			[
+				"recor",
+				"record"
+			],
+			[
+				"reco",
+				"records"
+			],
+			[
+				"fil",
+				"file_name_parts"
+			],
+			[
+				"in",
+				"incre_number"
+			],
+			[
+				"recod",
+				"records"
+			],
+			[
+				"de",
+				"decre_number"
+			],
+			[
+				"d",
+				"decre_number"
+			],
+			[
+				"c",
+				"cur_r_idc"
+			],
+			[
+				"we",
+				"write"
+			],
+			[
+				"head",
+				"head_line"
+			],
+			[
+				"o",
+				"output_names"
+			],
+			[
+				"l2",
+				"l2end"
+			],
+			[
+				"l1",
+				"l1begin"
+			],
+			[
+				"cro",
+				"crossX"
+			],
+			[
+				"sum",
+				"sum_file"
+			],
+			[
+				"name",
+				"name_parts"
+			],
+			[
+				"mont",
+				"month_data"
+			],
+			[
+				"nor",
+				"nor_num"
+			],
+			[
+				"min",
+				"minVal"
+			],
+			[
+				"max",
+				"maxVal"
+			],
+			[
+				"file_",
+				"file_base_name"
+			],
+			[
+				"std",
+				"stdlib"
+			],
+			[
+				"id",
+				"id_name"
+			],
+			[
+				"rero",
+				"record"
+			],
+			[
+				"ch",
+				"choseIdc"
+			],
+			[
+				"reor",
+				"records"
+			],
+			[
+				"P_",
+				"P_E"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++11.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXBox/support/LaTeXBox.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXBox/support/LaTeXBox.sublime-build",
+					"Force"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++11.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:In",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 248.0,
+		"history":
+		[
+			"help",
+			"hello",
+			",,",
+			",,,",
+			"7",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments"
+	],
+	"file_history":
+	[
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/Similarity.py",
+		"/Users/xieyongqing/Desktop/SLB/P_A分类/group_pa/relation_3660893201891288713_HK.arff",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/calculateArea.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Select-安徽省办公楼施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/SLB/P_A分类/P_C.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Regulate-安徽省工业企业主要指标.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/regulateEconomicData.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/SelectMonth.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Select-安徽省工业企业主要指标.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省办公楼施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省商业营业用房施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/ElecConsum.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省工业增加值增长速度.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省房地产开发投资情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省房地产施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/path.txt",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省商品住宅施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资住宅建设情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资构成情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/sum-安徽.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/Similarity.sublime-project",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资项目情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省工业企业主要指标.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/SumOfProvinces.py",
+		"/Users/xieyongqing/Hexo/source/_posts/Sublime-配置C-环境.md",
+		"/Users/xieyongqing/Hexo/source/_posts/我们也许永远都未曾理解好朋友的内心.md",
+		"/Users/xieyongqing/Hexo/source/_posts/汇编学习笔记（1）.md",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/normilizeEle.py",
+		"/Users/xieyongqing/Desktop/SLB/relation_normalization/relation_HI.arff",
+		"/Users/xieyongqing/Desktop/SLB/relation/relation_HI.arff",
+		"/Users/xieyongqing/Desktop/SLB/relation/relation_HI_Output.csv",
+		"/Users/xieyongqing/Desktop/SLB/relation_normalization/getCsv.py",
+		"/Users/xieyongqing/Desktop/SLB/Work/11_11.md",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/convertCSV.py",
+		"/Users/xieyongqing/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/01414206cfcbb355ccd63f14a87bf30d/Message/MessageTemp/5d1541ce932400bc08682510b2fa5a77/File/59215538278118774.P_I",
+		"/Users/xieyongqing/Desktop/play/Hiho/PowersOfTwo.cpp",
+		"/Users/xieyongqing/Desktop/trash/1.html",
+		"/Users/xieyongqing/Desktop/trash/1.css",
+		"/Users/xieyongqing/Desktop/trash/test.c",
+		"/Users/xieyongqing/Library/Application Support/Sublime Text 3/Packages/User/c.sublime-build",
+		"/Users/xieyongqing/Library/Application Support/Sublime Text 3/Packages/User/C++11.sublime-build",
+		"/Users/xieyongqing/Desktop/SLB/relation/SingleVarPermutation.cpp",
+		"/Users/xieyongqing/Desktop/SLB/relation/getCsv.py",
+		"/Users/xieyongqing/Desktop/SLB/forAI/82749708839003083.P_I",
+		"/Users/xieyongqing/Desktop/SLB/forAI/59215538278118774.P_I",
+		"/Users/xieyongqing/Desktop/SLB/relation/ExtractSingleVar",
+		"/Users/xieyongqing/Desktop/SLB/relation/untitled",
+		"/Users/xieyongqing/Desktop/SLB/forAI/59215538278118774.P_J",
+		"/Users/xieyongqing/Desktop/play/Test.tex",
+		"/Users/xieyongqing/Desktop/play/moderncvcompatibility.sty"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"powerNumber",
+			"build"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 172.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "Similarity.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
