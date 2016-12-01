@@ -4,6 +4,8 @@
 import codecs, sys, os
 import calculateArea
 
+#进行相似性的计算和比较
+
 def process(prvn, fln1, fln2):
 	f1 = codecs.open(fln1, 'r', 'utf-8')
 	f2 = codecs.open(fln2, 'r', 'utf-8')

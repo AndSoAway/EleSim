@@ -1,21 +1,4 @@
-\begin{thebibliography}{10}
-
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
-
-\bibitem{braams:babel}
-J.~Braams.
-\newblock Babel, a multilingual style-option system for use with latex's
-  standard document styles.
-\newblock {\em TUGboat}, 12(2):291--301, June 1991.
-
-\bibitem{clark:pct}
-M.~Clark.
-\newblock Post congress tristesse.
-\newblock In {\em TeX90 Conference Proceedings}, pages 84--89. TeX Users Group,
-  March 1991.
+\begin{thebibliography}{1}
 
 \bibitem{erol1987causal}
 U.~Erol and E.~S. Yu.
@@ -29,20 +12,10 @@ Y.~U. Glasure and A.-R. Lee.
   energy:: The case of south korea and singapore.
 \newblock {\em Resource and Energy Economics}, 20(1):17--25, 1998.
 
-\bibitem{herlihy:methodology}
-M.~Herlihy.
-\newblock A methodology for implementing highly concurrent data objects.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
-
 \bibitem{kraft:relationship}
 J.~Kraft and A.~Kraft.
 \newblock Relationship between energy and gnp.
 \newblock {\em J. Energy Dev.;(United States)}, 3(2), 1978.
-
-\bibitem{Lamport:LaTeX}
-L.~Lamport.
-\newblock {\em LaTeX User's Guide and Document Reference Manual}.
-\newblock Addison-Wesley Publishing Company, Reading, Massachusetts, 1986.
 
 \bibitem{salas:calculus}
 S.~Salas and E.~Hille.

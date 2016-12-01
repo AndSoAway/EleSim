@@ -3,6 +3,8 @@
 
 import os, sys, codecs
 
+#主要是把缺失的月份进行补全，采用前后三个月数据平均的方法
+
 def select(file_name):
 	file = codecs.open(file_name, 'r', 'utf-8')
 	headers = file.readline().split(',')
