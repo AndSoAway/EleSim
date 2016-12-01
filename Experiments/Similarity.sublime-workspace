@@ -4,6 +4,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"ele",
 				"ele_part"
 			],
@@ -158,6 +159,78 @@
 			[
 				"mt",
 				"mtr_cnt"
+=======
+				"cur",
+				"cur_fields"
+			],
+			[
+				"line",
+				"linesep"
+			],
+			[
+				"ln",
+				"line_parts"
+			],
+			[
+				"p_",
+				"p_d"
+			],
+			[
+				"P",
+				"P_D"
+			],
+			[
+				"p",
+				"p_d"
+			],
+			[
+				"cu",
+				"cur_fields"
+			],
+			[
+				"s",
+				"split"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"leas",
+				"least_area"
+			],
+			[
+				"l",
+				"least_sim"
+			],
+			[
+				"least",
+				"least_sim"
+			],
+			[
+				"mtr",
+				"mtr_arr"
+			],
+			[
+				"fl",
+				"flnm2"
+			],
+			[
+				"f",
+				"flnm1"
+			],
+			[
+				"mt",
+				"mtr_cnt"
+			],
+			[
+				"m",
+				"mtr_cnt"
+			],
+			[
+				"li",
+				"line"
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 			],
 			[
 				"lin",
@@ -176,10 +249,24 @@
 				"field_idc"
 			],
 			[
+<<<<<<< HEAD
+=======
+				"re",
+				"record_count"
+			],
+			[
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 				"cur_",
 				"cur_r_idc"
 			],
 			[
+<<<<<<< HEAD
+=======
+				"out",
+				"output_file"
+			],
+			[
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 				"recor",
 				"record"
 			],
@@ -188,6 +275,13 @@
 				"records"
 			],
 			[
+<<<<<<< HEAD
+=======
+				"fil",
+				"file_name_parts"
+			],
+			[
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 				"in",
 				"incre_number"
 			],
@@ -196,6 +290,13 @@
 				"records"
 			],
 			[
+<<<<<<< HEAD
+=======
+				"de",
+				"decre_number"
+			],
+			[
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 				"d",
 				"decre_number"
 			],
@@ -283,6 +384,7 @@
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
 		{
 			"file": "Similarity.py",
 			"settings":
@@ -327,6 +429,8 @@
 				"line_ending": "Unix"
 			}
 		}
+=======
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -466,6 +570,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments",
 		"/Users/xieyongqing/Desktop/ElecSim/Data",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces"
@@ -479,12 +584,23 @@
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/select_path.txt",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/regulate_path.txt",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/path.txt",
+=======
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments"
+	],
+	"file_history":
+	[
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/Similarity.py",
 		"/Users/xieyongqing/Desktop/SLB/P_A分类/group_pa/relation_3660893201891288713_HK.arff",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/calculateArea.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Select-安徽省办公楼施工竣工面积.csv",
 		"/Users/xieyongqing/Desktop/SLB/P_A分类/P_C.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Regulate-安徽省工业企业主要指标.csv",
+<<<<<<< HEAD
+=======
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/regulateEconomicData.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/SelectMonth.py",
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Select-安徽省工业企业主要指标.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省办公楼施工竣工面积.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省商业营业用房施工竣工面积.csv",
@@ -531,7 +647,11 @@
 	],
 	"find":
 	{
+<<<<<<< HEAD
 		"height": 39.0
+=======
+		"height": 31.0
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 	},
 	"find_in_files":
 	{
@@ -545,10 +665,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"利润总额_累计值",
 			"存货_累计值",
 			"主营业务收入_累计值",
 			"应收帐款_累计值",
+=======
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 			"powerNumber",
 			"build"
 		],
@@ -568,6 +691,7 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 2,
 			"sheets":
 			[
@@ -919,6 +1043,15 @@
 					"stack_index": 3,
 					"type": "text"
 				}
+=======
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 			]
 		}
 	],
@@ -928,7 +1061,11 @@
 	},
 	"input":
 	{
+<<<<<<< HEAD
 		"height": 39.0
+=======
+		"height": 0.0
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 	},
 	"layout":
 	{
@@ -950,7 +1087,11 @@
 		"cols":
 		[
 			0.0,
+<<<<<<< HEAD
 			0.866682766842,
+=======
+			0.5,
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 			1.0
 		],
 		"rows":
@@ -962,7 +1103,11 @@
 	"menu_visible": true,
 	"output.exec":
 	{
+<<<<<<< HEAD
 		"height": 40.0
+=======
+		"height": 172.0
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 	},
 	"output.find_results":
 	{
@@ -1014,7 +1159,11 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
+<<<<<<< HEAD
 	"side_bar_width": 590.0,
+=======
+	"side_bar_width": 233.0,
+>>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 	"status_bar_visible": true,
 	"template_settings":
 	{
