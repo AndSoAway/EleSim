@@ -12,6 +12,9 @@
 *.doc[x]
 *.pdf
 
+Dongdong/
+Tana/
+
 __pycache__/
 *.py[cod]
 *$py.class
