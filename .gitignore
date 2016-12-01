@@ -13,7 +13,12 @@
 *.pdf
 *.dvi
 
-SIG\ Proceedings\ Template-Jan2015\ Zip/.texpadtmp/
+SigmodChina/*
+!SigmodChina/*.tex
+!SigmodChina/*.bib
+!SigmodChina/*.cls
+!SigmodChina/*.sty 
+
 Dongdong/
 Tana/
 
