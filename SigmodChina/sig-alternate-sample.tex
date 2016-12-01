@@ -46,36 +46,7 @@
 % For tracking purposes - this is V2.0 - May 2012
 
 \documentclass{sig-alternate-05-2015}
-\usepackage[lined,linesnumbered,boxed,vlined,ruled]{algorithm2e}
-\usepackage{graphicx,epsfig,subfigure}
-\usepackage{xspace}
-\usepackage[mathscr]{eucal}
-\usepackage[nospace]{cite}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{enumitem}
-\usepackage{tikz}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{multirow}
-\usepackage{subfigure}
-\usetikzlibrary{decorations.pathreplacing}
-\usetikzlibrary{matrix}
-\usetikzlibrary{positioning}
-\usetikzlibrary{patterns}
 
-\DeclareMathOperator*{\argmin}{arg\,min}
-
-\usepackage{CJK}
-\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-\usepackage{algorithm}
-\usepackage{algorithmicx}
-\usepackage{algpseudocode}
- 
-\floatname{algorithm}{算法}
-\renewcommand{\algorithmicrequire}{\textbf{输入:}}
-\renewcommand{\algorithmicensure}{\textbf{输出:}}
 
 \begin{document}
 
@@ -107,7 +78,7 @@
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
-\title{{\ttlit ACM} My First Paper 
+\title{Alternate {\ttlit ACM} SIG Proceedings Paper in LaTeX
 Format\titlenote{(Produces the permission block, and
 copyright information). For use with
 SIG-ALTERNATE.CLS. Supported by ACM.}}
@@ -178,25 +149,25 @@ one who did all the really hard work.}\\
        \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
        \affaddr{Hekla, Iceland}\\
        \email{larst@affiliation.org}
-%\and  % use '\and' if you need 'another row' of author names
+\and  % use '\and' if you need 'another row' of author names
 % 4th. author
-%\alignauthor Lawrence P. Leipuner\\
-%       \affaddr{Brookhaven Laboratories}\\
-%       \affaddr{Brookhaven National Lab}\\
-%       \affaddr{P.O. Box 5000}\\
-%       \email{lleipuner@researchlabs.org}
-%% 5th. author
-%\alignauthor Sean Fogarty\\
-%       \affaddr{NASA Ames Research Center}\\
-%       \affaddr{Moffett Field}\\
-%       \affaddr{California 94035}\\
-%       \email{fogartys@amesres.org}
-%% 6th. author
-%\alignauthor Charles Palmer\\
-%       \affaddr{Palmer Research Laboratories}\\
-%       \affaddr{8600 Datapoint Drive}\\
-%       \affaddr{San Antonio, Texas 78229}\\
-%       \email{cpalmer@prl.com}
+\alignauthor Lawrence P. Leipuner\\
+       \affaddr{Brookhaven Laboratories}\\
+       \affaddr{Brookhaven National Lab}\\
+       \affaddr{P.O. Box 5000}\\
+       \email{lleipuner@researchlabs.org}
+% 5th. author
+\alignauthor Sean Fogarty\\
+       \affaddr{NASA Ames Research Center}\\
+       \affaddr{Moffett Field}\\
+       \affaddr{California 94035}\\
+       \email{fogartys@amesres.org}
+% 6th. author
+\alignauthor Charles Palmer\\
+       \affaddr{Palmer Research Laboratories}\\
+       \affaddr{8600 Datapoint Drive}\\
+       \affaddr{San Antonio, Texas 78229}\\
+       \email{cpalmer@prl.com}
 }
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
@@ -213,7 +184,7 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 \maketitle
 \begin{abstract}
 As is widely known, the electronic are closely connected to the economic development. Lots of work has been placed on the regression relationship between the economic metrics and electricity-related indexes, which not focus on the tendency wholly. Obviously, the economic and electricity data can be treated as trajectories composed of points with 
-\end{abstract}
+s\end{abstract}
 
 
 %
@@ -221,35 +192,35 @@ As is widely known, the electronic are closely connected to the economic develop
 % http://dl.acm.org/ccs.cfm
 % Please copy and paste the code instead of the example below. 
 %
-%\begin{CCSXML}
-%<ccs2012>
-% <concept>
-%  <concept_id>10010520.10010553.10010562</concept_id>
-%  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
-%  <concept_significance>500</concept_significance>
-% </concept>
-% <concept>
-%  <concept_id>10010520.10010575.10010755</concept_id>
-%  <concept_desc>Computer systems organization~Redundancy</concept_desc>
-%  <concept_significance>300</concept_significance>
-% </concept>
-% <concept>
-%  <concept_id>10010520.10010553.10010554</concept_id>
-%  <concept_desc>Computer systems organization~Robotics</concept_desc>
-%  <concept_significance>100</concept_significance>
-% </concept>
-% <concept>
-%  <concept_id>10003033.10003083.10003095</concept_id>
-%  <concept_desc>Networks~Network reliability</concept_desc>
-%  <concept_significance>100</concept_significance>
-% </concept>
-%</ccs2012>  
-%\end{CCSXML}
-%
-%\ccsdesc[500]{Computer systems organization~Embedded systems}
-%\ccsdesc[300]{Computer systems organization~Redundancy}
-%\ccsdesc{Computer systems organization~Robotics}
-%\ccsdesc[100]{Networks~Network reliability}
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>  
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
 
 
 %
@@ -264,7 +235,7 @@ As is widely known, the electronic are closely connected to the economic develop
 % We no longer use \terms command
 %\terms{Theory}
 
-\keywords{Electricity; Trajectory; Similarity; Economic Indicators}
+\keywords{ACM proceedings; \LaTeX; text tagging}
 
 \section{Introduction}
 China has gone through a rapid economic growth in the past three decades, and economy boosting in east china area has been always a highlight. Ever since, electricity has been a powerful catalyst for social development and economic growth. Empirically, economic fluctuation would cause changes in electricity consumption and electricity consumption can also reflect the economic change. There has been much interests in the causal relationship between economic growth and electricity consumption using the regression or statistical method. However, though the economic indicators and electricity consumption can be viewed as time series and lots of trajectory similarity methods exist, a big gap still lies midst them. Our work in this paper would focus on the exploit of internal link between economic indicators and electricity consumption using trajectory similarity.
@@ -284,6 +255,7 @@ Compare to the previous work, our paper has made the following contributions.
 
 The rest part of this paper is organized as follows. We formalize our question in section 2 and introduce our algorithms in section 3. In section 4, we will elaborate our experiments and highlight our contributions. At last, the section 5 will give the conclusion and the future work.
 
+% Section Problem Formulation
 \section{Problem Formulation}
 In this section, we will formalize our work into a segement-similarity question and define the notations that we need in the blow.
 
@@ -320,65 +292,48 @@ Given the statistical report, we could know that different indicators exist the 
 \begin{definition}
 	[[[This part, we can put the top-K problem]]]]
 \end{definition} 
+
+% Section Algorithms
 \section{Algorithms}
 In this section, we describe a novel top-k algorithm based on the area similarity to find the top-k relevant economic indicators. 
 \subsection{Similarity}
-
-\begin{CJK*}{UTF8}{gkai}
-    \begin{algorithm}
-        \caption{用归并排序求逆序数}
-        \begin{algorithmic}[1] %每行显示行号
-            \Require $Array$Array，$n$数组大小
-            \Ensure 逆序数
-            \Function {MergerSort}{$Array, left, right$}
-                \State $result \gets 0$
-                \If {$left < right$}
-                    \State $middle \gets (left + right) / 2$
-                    \State $result \gets result +$ \Call{MergerSort}{$Array, left, middle$}
-                    \State $result \gets result +$ \Call{MergerSort}{$Array, middle, right$}
-                    \State $result \gets result +$ \Call{Merger}{$Array,left,middle,right$}
-                \EndIf
-                \State \Return{$result$}
-            \EndFunction
-            \State
-            \Function{Merger}{$Array, left, middle, right$}
-                \State $i\gets left$
-                \State $j\gets middle$
-                \State $k\gets 0$
-                \State $result \gets 0$
-                \While{$i<middle$ \textbf{and} $j<right$}
-                    \If{$Array[i]<Array[j]$}
-                        \State $B[k++]\gets Array[i++]$
-                    \Else
-                        \State $B[k++] \gets Array[j++]$
-                        \State $result \gets result + (middle - i)$
-                    \EndIf
-                \EndWhile
-                \While{$i<middle$}
-                    \State $B[k++] \gets Array[i++]$
-                \EndWhile
-                \While{$j<right$}
-                    \State $B[k++] \gets Array[j++]$
-                \EndWhile
-                \For{$i = 0 \to k-1$}
-                    \State $Array[left + i] \gets B[i]$
-                \EndFor
-                \State \Return{$result$}
-            \EndFunction
-        \end{algorithmic}
-    \end{algorithm}
-\end{CJK*}
 
 \subsection{Hysteresis}
 
 \section{Experiments}
 \subsection{Data Preprocessing}
 Different data source supply data with different dimensions. So, we must normalize the data to make them comparable. 
+
 \section{Conclusion}
-\subsection{Figures}
+
 The time series of economic indicators and electricity consumption would be viewed as a segment. We should evaluate the correlation of economic indicators with electricity consumption through the similarity between the two segments like in Fig 1.[[[[[Here , we should  put one Picture of two examples]]]]] 
 
 Firstly , Let's define the similarity of two segments.
+
+
+\section{The {\secit Body} of The Paper}
+Typically, the body of a paper is organized
+into a hierarchical structure, with numbered or unnumbered
+headings for sections, subsections, sub-subsections, and even
+smaller sections.  The command \texttt{{\char'134}section} that
+precedes this paragraph is part of such a
+hierarchy.\footnote{This is the second footnote.  It
+starts a series of three footnotes that add nothing
+informational, but just give an idea of how footnotes work
+and look. It is a wordy one, just so you see
+how a longish one plays out.} \LaTeX\ handles the numbering
+and placement of these headings for you, when you use
+the appropriate heading commands around the titles
+of the headings.  If you want a sub-subsection or
+smaller part to be unnumbered in your output, simply append an
+asterisk to the command name.  Examples of both
+numbered and unnumbered headings will appear throughout the
+balance of this sample document.
+
+Because the entire article is contained in
+the \textbf{document} environment, you can indicate the
+start of a new paragraph with a blank line in your
+input file; that is why this sentence forms a separate paragraph.
 
 \subsection{Type Changes and {\subsecit Special} Characters}
 We have already seen several typeface changes in this sample.  You
@@ -538,7 +493,6 @@ displayable with \LaTeX.  If you work with pdf\LaTeX, use files in the
 \textbf{.pdf} format.  Note that most modern \TeX\ system will convert
 \textbf{.eps} to \textbf{.pdf} for you on the fly.  More details on
 each of these is found in the \textit{Author's Guide}.
->>>>>>> 411feb5c98f751ecfdddb741c653530e9c4ab968
 
 \begin{figure}
 \centering
@@ -546,6 +500,11 @@ each of these is found in the \textit{Author's Guide}.
 \caption{A sample black and white graphic.}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[height=1in, width=1in]{fly}
+\caption{A sample black and white graphic
+that has been resized with the \texttt{includegraphics} command.}
 \end{figure}
 
 
@@ -554,7 +513,120 @@ that spans two columns.  To do this, and still to
 ensure proper ``floating'' placement of tables, use the environment
 \textbf{figure*} to enclose the figure and its caption.
 and don't forget to end the environment with
-{figure*}, not {figure}!
+{figure*}, not {figure}!
+
+\begin{figure*}
+\centering
+\includegraphics{flies}
+\caption{A sample black and white graphic
+that needs to span two columns of text.}
+\end{figure*}
+
+
+\begin{figure}
+\centering
+\includegraphics[height=1in, width=1in]{rosette}
+\caption{A sample black and white graphic that has
+been resized with the \texttt{includegraphics} command.}
+\vskip -6pt
+\end{figure}
+
+\subsection{Theorem-like Constructs}
+Other common constructs that may occur in your article are
+the forms for logical constructs like theorems, axioms,
+corollaries and proofs.  There are
+two forms, one produced by the
+command \texttt{{\char'134}newtheorem} and the
+other by the command \texttt{{\char'134}newdef}; perhaps
+the clearest and easiest way to distinguish them is
+to compare the two in the output of this sample document:
+
+This uses the \textbf{theorem} environment, created by
+the\linebreak\texttt{{\char'134}newtheorem} command:
+\newtheorem{theorem}{Theorem}
+\begin{theorem}
+Let $f$ be continuous on $[a,b]$.  If $G$ is
+an antiderivative for $f$ on $[a,b]$, then
+\begin{displaymath}\int^b_af(t)dt = G(b) - G(a).\end{displaymath}
+\end{theorem}
+
+The other uses the \textbf{definition} environment, created
+by the \texttt{{\char'134}newdef} command:
+\begin{definition}
+If $z$ is irrational, then by $e^z$ we mean the
+unique number which has
+logarithm $z$: \begin{displaymath}{\log e^z = z}\end{displaymath}
+\end{definition}
+
+Two lists of constructs that use one of these
+forms is given in the
+\textit{Author's  Guidelines}.
+ 
+There is one other similar construct environment, which is
+already set up
+for you; i.e. you must \textit{not} use
+a \texttt{{\char'134}newdef} command to
+create it: the \textbf{proof} environment.  Here
+is a example of its use:
+\begin{proof}
+Suppose on the contrary there exists a real number $L$ such that
+\begin{displaymath}
+\lim_{x\rightarrow\infty} \frac{f(x)}{g(x)} = L.
+\end{displaymath}
+Then
+\begin{displaymath}
+l=\lim_{x\rightarrow c} f(x)
+= \lim_{x\rightarrow c}
+\left[ g{x} \cdot \frac{f(x)}{g(x)} \right ]
+= \lim_{x\rightarrow c} g(x) \cdot \lim_{x\rightarrow c}
+\frac{f(x)}{g(x)} = 0\cdot L = 0,
+\end{displaymath}
+which contradicts our assumption that $l\neq 0$.
+\end{proof}
+
+Complete rules about using these environments and using the
+two different creation commands are in the
+\textit{Author's Guide}; please consult it for more
+detailed instructions.  If you need to use another construct,
+not listed therein, which you want to have the same
+formatting as the Theorem
+or the Definition\cite{salas:calculus} shown above,
+use the \texttt{{\char'134}newtheorem} or the
+\texttt{{\char'134}newdef} command,
+respectively, to create it.
+
+\subsection*{A {\secit Caveat} for the \TeX\ Expert}
+Because you have just been given permission to
+use the \texttt{{\char'134}newdef} command to create a
+new form, you might think you can
+use \TeX's \texttt{{\char'134}def} to create a
+new command: \textit{Please refrain from doing this!}
+Remember that your \LaTeX\ source code is primarily intended
+to create camera-ready copy, but may be converted
+to other forms -- e.g. HTML. If you inadvertently omit
+some or all of the \texttt{{\char'134}def}s recompilation will
+be, to say the least, problematic.
+
+\section{Conclusions}
+This paragraph will end the body of this sample document.
+Remember that you might still have Acknowledgments or
+Appendices; brief samples of these
+follow.  There is still the Bibliography to deal with; and
+we will make a disclaimer about that here: with the exception
+of the reference to the \LaTeX\ book, the citations in
+this paper are to articles which have nothing to
+do with the present subject and are used as
+examples only.
+%\end{document}  % This is where a 'short' article might terminate
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+This section is optional; it is a location for you
+to acknowledge grants, funding, editing assistance and
+what have you.  In the present case, for example, the
+authors would like to thank Gerald Murray of ACM for
+his help in codifying this \textit{Author's Guide}
+and the \textbf{.cls} and \textbf{.tex} files that it describes.
 
 %
 % The following two commands are all you need in the
