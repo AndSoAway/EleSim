@@ -13,6 +13,8 @@
 *.pdf
 *.dvi
 
+SIG\ Proceedings\ Template-Jan2015\ Zip/ 
+
 SigmodChina/*
 !SigmodChina/*.tex
 !SigmodChina/*.bib
