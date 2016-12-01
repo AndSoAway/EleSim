@@ -11,6 +11,7 @@
 *.txt
 *.doc[x]
 *.pdf
+*.dvi
 
 Dongdong/
 Tana/
