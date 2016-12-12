@@ -4,8 +4,124 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"res3"
+			],
+			[
+				"res",
+				"res1"
+			],
+			[
+				"r",
+				"res_file"
+			],
+			[
+				"ini",
+				"indicator"
+			],
+			[
+				"Lc",
+				"LCSS"
+			],
+			[
+				"ind",
+				"indicator"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"in",
+				"indicator"
+			],
+			[
+				"ar",
+				"arr2"
+			],
+			[
+				"mtr",
+				"mtr_fl"
+			],
+			[
+				"ee",
+				"ele_files"
+			],
+			[
+				"pr",
+				"prvn"
+			],
+			[
+				"metr",
+				"metrics"
+			],
+			[
+				"me",
+				"metrics"
+			],
+			[
+				"line",
+				"line_parts"
+			],
+			[
 				"ele",
-				"ele_part"
+				"ele_array"
+			],
+			[
+				"index",
+				"index_name"
+			],
+			[
+				"l",
+				"linesep"
+			],
+			[
+				"i",
+				"index"
+			],
+			[
+				"p",
+				"prvns"
+			],
+			[
+				"tim",
+				"time_count"
+			],
+			[
+				"t",
+				"time"
+			],
+			[
+				"a",
+				"all_index"
+			],
+			[
+				"o",
+				"otpt_fl"
+			],
+			[
+				"ot",
+				"otpt"
+			],
+			[
+				"otpt",
+				"otpt_fl"
+			],
+			[
+				"fl",
+				"flnms"
+			],
+			[
+				"prv",
+				"prvns"
+			],
+			[
+				"lin",
+				"line_parts"
+			],
+			[
+				"otp",
+				"otpt_fl"
 			],
 			[
 				"lea",
@@ -24,16 +140,8 @@
 				"flnm"
 			],
 			[
-				"fl",
-				"fln2"
-			],
-			[
 				"f",
 				"fln1"
-			],
-			[
-				"metr",
-				"metric_files"
 			],
 			[
 				"leas",
@@ -60,28 +168,8 @@
 				"delay"
 			],
 			[
-				"me",
-				"metric"
-			],
-			[
-				"res",
-				"res_file"
-			],
-			[
-				"mtr",
-				"mtr_fl"
-			],
-			[
-				"pr",
-				"prvn"
-			],
-			[
 				"m",
 				"metric_files"
-			],
-			[
-				"ee",
-				"ele_metrics"
 			],
 			[
 				"file",
@@ -112,20 +200,12 @@
 				"output_file_name"
 			],
 			[
-				"re",
-				"regulate_path_file"
-			],
-			[
 				"fil",
 				"file_name"
 			],
 			[
 				"pa",
 				"path_txt"
-			],
-			[
-				"line",
-				"linesep"
 			],
 			[
 				"ln",
@@ -140,16 +220,8 @@
 				"P_D"
 			],
 			[
-				"p",
-				"p_d"
-			],
-			[
 				"cu",
 				"cur_fields"
-			],
-			[
-				"l",
-				"least_sim"
 			],
 			[
 				"least",
@@ -160,16 +232,8 @@
 				"mtr_cnt"
 			],
 			[
-				"lin",
-				"linesep"
-			],
-			[
 				"rec",
 				"record"
-			],
-			[
-				"r",
-				"r_idc"
 			],
 			[
 				"fi",
@@ -186,10 +250,6 @@
 			[
 				"reco",
 				"records"
-			],
-			[
-				"in",
-				"incre_number"
 			],
 			[
 				"recod",
@@ -210,10 +270,6 @@
 			[
 				"head",
 				"head_line"
-			],
-			[
-				"o",
-				"output_names"
 			],
 			[
 				"l2",
@@ -284,10 +340,59 @@
 	"buffers":
 	[
 		{
-			"file": "SelectMonth.py",
+			"file": "splitProvinces.py",
 			"settings":
 			{
-				"buffer_size": 3598,
+				"buffer_size": 2290,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fetch_data.py",
+			"settings":
+			{
+				"buffer_size": 2204,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "LCSS.py",
+			"settings":
+			{
+				"buffer_size": 1680,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Zhejiang,固定资产投资完成额_累计值(亿元),0.671641791045\nZhejiang,固定资产投资完成额_累计增长(%),0.731343283582\nZhejiang,建筑安装工程固定资产投资完成额_累计值(亿元),0.686567164179\nZhejiang,建筑安装工程固定资产投资完成额_累计增长(%),0.89552238806\nZhejiang,设备工器具购置固定资产投资完成额_累计值(亿元),0.671641791045\nZhejiang,设备工器具购置固定资产投资完成额_累计增长(%),0.880597014925\nZhejiang,其他费用固定资产投资完成额_累计值(亿元),0.671641791045\nZhejiang,其他费用固定资产投资完成额_累计增长(%),0.761194029851\nZhejiang,企业单位数_累计值(个),0.582089552239\nZhejiang,亏损企业_累计值(个),0.835820895522\nZhejiang,亏损企业_上年同期累计值(个),0.805970149254\nZhejiang,亏损企业_累计增长(%),0.597014925373\nZhejiang,流动资产合计_累计值(亿元),0.522388059701\nZhejiang,流动资产合计_上年同期累计值(亿元),0.522388059701\nZhejiang,流动资产合计_累计增长(%),0.507462686567\nZhejiang,应收帐款_累计值(亿元),0.65671641791\nZhejiang,应收帐款_上年同期累计值(亿元),0.582089552239\nZhejiang,应收帐款_累计增长(%),0.641791044776\nZhejiang,存货_累计值(亿元),0.537313432836\nZhejiang,存货_上年同期累计值(亿元),0.507462686567\nZhejiang,存货_累计增长(%),0.522388059701\nZhejiang,产成品_累计值(亿元),0.611940298507\nZhejiang,产成品_上年同期累计值(亿元),0.537313432836\nZhejiang,产成品_累计增长(%),0.537313432836\nZhejiang,资产总计_累计值(亿元),0.567164179104\nZhejiang,资产总计_上年同期累计值(亿元),0.55223880597\nZhejiang,资产总计_累计增长(%),0.402985074627\nZhejiang,负债合计_累计值(亿元),0.567164179104\nZhejiang,负债合计_上年同期累计值(亿元),0.537313432836\nZhejiang,负债合计_累计增长(%),0.537313432836\nZhejiang,主营业务收入_累计值(亿元),0.731343283582\nZhejiang,主营业务收入_上年同期累计值(亿元),0.716417910448\nZhejiang,主营业务收入_累计增长(%),0.507462686567\nZhejiang,主营业务成本_累计值(亿元),0.731343283582\nZhejiang,主营业务成本_上年同期累计值(亿元),0.716417910448\nZhejiang,主营业务成本_累计增长(%),0.55223880597\nZhejiang,主营业务税金及附加_累计值(亿元),0.746268656716\nZhejiang,主营业务税金及附加_上年同期累计值(亿元),0.746268656716\nZhejiang,主营业务税金及附加_累计增长(%),0.582089552239\nZhejiang,销售费用_累计值(亿元),0.716417910448\nZhejiang,销售费用_上年同期累计值(亿元),0.731343283582\nZhejiang,销售费用_累计增长(%),0.701492537313\nZhejiang,管理费用_累计值(亿元),0.731343283582\nZhejiang,管理费用_上年同期累计值(亿元),0.731343283582\nZhejiang,管理费用_累计增长(%),0.432835820896\nZhejiang,财务费用_累计值(亿元),0.761194029851\nZhejiang,财务费用_上年同期累计值(亿元),0.716417910448\nZhejiang,财务费用_累计增长(%),0.537313432836\nZhejiang,利息支出_累计值(亿元),0.746268656716\nZhejiang,利息支出_上年同期累计值(亿元),0.716417910448\nZhejiang,利息支出_累计增长(%),0.65671641791\nZhejiang,利润总额_累计值(亿元),0.716417910448\nZhejiang,利润总额_上年同期累计值(亿元),0.701492537313\nZhejiang,利润总额_累计增长(%),0.835820895522\nZhejiang,亏损企业亏损总额_累计值(亿元),0.746268656716\nZhejiang,亏损企业亏损总额_上年同期累计值(亿元),0.626865671642\nZhejiang,亏损企业亏损总额_累计增长(%),0.65671641791\nZhejiang,应交增值税_累计值(亿元),0.701492537313\nZhejiang,应交增值税_上年同期累计值(亿元),0.701492537313\nZhejiang,应交增值税_累计增长(%),0.611940298507\nZhejiang,办公楼施工面积_累计值(万平方米),0.626865671642\nZhejiang,办公楼施工面积_累计增长(%),0.776119402985\nZhejiang,办公楼新开工施工面积_累计值(万平方米),0.686567164179\nZhejiang,办公楼新开工施工面积_累计增长(%),0.820895522388\nZhejiang,办公楼竣工面积_累计值(万平方米),0.671641791045\nZhejiang,办公楼竣工面积_累计增长(%),0.731343283582\nZhejiang,工业增加值_同比增长(%),0.776119402985\nZhejiang,工业增加值_累计增长(%),0.761194029851\nZhejiang,房地产投资_累计值(亿元),0.671641791045\nZhejiang,房地产投资_累计增长(%),0.820895522388\nZhejiang,房地产住宅投资_累计值(亿元),0.671641791045\nZhejiang,房地产住宅投资_累计增长(%),0.776119402985\nZhejiang,房地产施工面积_累计值(万平方米),0.701492537313\nZhejiang,房地产施工面积_累计增长(%),0.731343283582\nZhejiang,房地产新开工施工面积_累计值(万平方米),0.716417910448\nZhejiang,房地产新开工施工面积_累计增长(%),0.582089552239\nZhejiang,房地产竣工面积_累计值(万平方米),0.65671641791\nZhejiang,房地产竣工面积_累计增长(%),0.716417910448\nZhejiang,商品住宅施工面积_累计值(万平方米),0.746268656716\nZhejiang,商品住宅施工面积_累计增长(%),0.686567164179\nZhejiang,商品住宅新开工施工面积_累计值(万平方米),0.716417910448\nZhejiang,商品住宅新开工施工面积_累计增长(%),0.65671641791\nZhejiang,商品住宅竣工面积_累计值(万平方米),0.671641791045\nZhejiang,商品住宅竣工面积_累计增长(%),0.716417910448\nZhejiang,施工项目项目个数_累计值(个),0.716417910448\nZhejiang,施工项目项目个数_累计增减额(个),0.731343283582\nZhejiang,新开工项目项目个数_累计值(个),0.701492537313\nZhejiang,新开工项目项目个数_累计增减额(个),0.597014925373\nZhejiang,商业营业用房施工面积_累计值(万平方米),0.597014925373\nZhejiang,商业营业用房施工面积_累计增长(%),0.880597014925\nZhejiang,商业营业用房新开工施工面积_累计值(万平方米),0.731343283582\nZhejiang,商业营业用房新开工施工面积_累计增长(%),0.835820895522\nZhejiang,商业营业用房竣工面积_累计值(万平方米),0.641791044776\nZhejiang,商业营业用房竣工面积_累计增长(%),0.746268656716\nZhejiang,住宅建设投资额_累计值(亿元),0.671641791045\nZhejiang,住宅建设投资额_累计增长(%),0.776119402985\nZhejiang,住宅施工面积_累计值(万平方米),0.746268656716\nZhejiang,住宅施工面积_累计增长(%),0.820895522388\nZhejiang,住宅竣工面积_累计值(万平方米),0.626865671642\nZhejiang,住宅竣工面积_累计增长(%),0.791044776119\nJiangsu,固定资产投资完成额_累计值(亿元),0.65671641791\nJiangsu,固定资产投资完成额_累计增长(%),0.835820895522\nJiangsu,建筑安装工程固定资产投资完成额_累计值(亿元),0.65671641791\nJiangsu,建筑安装工程固定资产投资完成额_累计增长(%),0.850746268657\nJiangsu,设备工器具购置固定资产投资完成额_累计值(亿元),0.671641791045\nJiangsu,设备工器具购置固定资产投资完成额_累计增长(%),0.880597014925\nJiangsu,其他费用固定资产投资完成额_累计值(亿元),0.686567164179\nJiangsu,其他费用固定资产投资完成额_累计增长(%),0.805970149254\nJiangsu,企业单位数_累计值(个),0.492537313433\nJiangsu,亏损企业_累计值(个),0.805970149254\nJiangsu,亏损企业_上年同期累计值(个),0.820895522388\nJiangsu,亏损企业_累计增长(%),0.567164179104\nJiangsu,流动资产合计_累计值(亿元),0.462686567164\nJiangsu,流动资产合计_上年同期累计值(亿元),0.477611940299\nJiangsu,流动资产合计_累计增长(%),0.671641791045\nJiangsu,应收帐款_累计值(亿元),0.55223880597\nJiangsu,应收帐款_上年同期累计值(亿元),0.522388059701\nJiangsu,应收帐款_累计增长(%),0.686567164179\nJiangsu,存货_累计值(亿元),0.522388059701\nJiangsu,存货_上年同期累计值(亿元),0.492537313433\nJiangsu,存货_累计增长(%),0.597014925373\nJiangsu,产成品_累计值(亿元),0.55223880597\nJiangsu,产成品_上年同期累计值(亿元),0.507462686567\nJiangsu,产成品_累计增长(%),0.776119402985\nJiangsu,资产总计_累计值(亿元),0.522388059701\nJiangsu,资产总计_上年同期累计值(亿元),0.522388059701\nJiangsu,资产总计_累计增长(%),0.582089552239\nJiangsu,负债合计_累计值(亿元),0.522388059701\nJiangsu,负债合计_上年同期累计值(亿元),0.492537313433\nJiangsu,负债合计_累计增长(%),0.582089552239\nJiangsu,主营业务收入_累计值(亿元),0.65671641791\nJiangsu,主营业务收入_上年同期累计值(亿元),0.65671641791\nJiangsu,主营业务收入_累计增长(%),0.597014925373\nJiangsu,主营业务成本_累计值(亿元),0.671641791045\nJiangsu,主营业务成本_上年同期累计值(亿元),0.641791044776\nJiangsu,主营业务成本_累计增长(%),0.611940298507\nJiangsu,主营业务税金及附加_累计值(亿元),0.686567164179\nJiangsu,主营业务税金及附加_上年同期累计值(亿元),0.671641791045\nJiangsu,主营业务税金及附加_累计增长(%),0.835820895522\nJiangsu,销售费用_累计值(亿元),0.641791044776\nJiangsu,销售费用_上年同期累计值(亿元),0.626865671642\nJiangsu,销售费用_累计增长(%),0.820895522388\nJiangsu,管理费用_累计值(亿元),0.65671641791\nJiangsu,管理费用_上年同期累计值(亿元),0.641791044776\nJiangsu,管理费用_累计增长(%),0.776119402985\nJiangsu,财务费用_累计值(亿元),0.686567164179\nJiangsu,财务费用_上年同期累计值(亿元),0.671641791045\nJiangsu,财务费用_累计增长(%),0.731343283582\nJiangsu,利息支出_累计值(亿元),0.671641791045\nJiangsu,利息支出_上年同期累计值(亿元),0.641791044776\nJiangsu,利息支出_累计增长(%),0.686567164179\nJiangsu,利润总额_累计值(亿元),0.671641791045\nJiangsu,利润总额_上年同期累计值(亿元),0.671641791045\nJiangsu,利润总额_累计增长(%),0.805970149254\nJiangsu,亏损企业亏损总额_累计值(亿元),0.716417910448\nJiangsu,亏损企业亏损总额_上年同期累计值(亿元),0.582089552239\nJiangsu,亏损企业亏损总额_累计增长(%),0.731343283582\nJiangsu,应交增值税_累计值(亿元),0.686567164179\nJiangsu,应交增值税_上年同期累计值(亿元),0.686567164179\nJiangsu,应交增值税_累计增长(%),0.910447761194\nJiangsu,办公楼施工面积_累计值(万平方米),0.537313432836\nJiangsu,办公楼施工面积_累计增长(%),0.865671641791\nJiangsu,办公楼新开工施工面积_累计值(万平方米),0.716417910448\nJiangsu,办公楼新开工施工面积_累计增长(%),0.701492537313\nJiangsu,办公楼竣工面积_累计值(万平方米),0.686567164179\nJiangsu,办公楼竣工面积_累计增长(%),0.731343283582\nJiangsu,工业增加值_同比增长(%),0.746268656716\nJiangsu,工业增加值_累计增长(%),0.776119402985\nJiangsu,房地产投资_累计值(亿元),0.641791044776\nJiangsu,房地产投资_累计增长(%),0.776119402985\nJiangsu,房地产住宅投资_累计值(亿元),0.641791044776\nJiangsu,房地产住宅投资_累计增长(%),0.746268656716\nJiangsu,房地产施工面积_累计值(万平方米),0.611940298507\nJiangsu,房地产施工面积_累计增长(%),0.835820895522\nJiangsu,房地产新开工施工面积_累计值(万平方米),0.761194029851\nJiangsu,房地产新开工施工面积_累计增长(%),0.671641791045\nJiangsu,房地产竣工面积_累计值(万平方米),0.701492537313\nJiangsu,房地产竣工面积_累计增长(%),0.791044776119\nJiangsu,商品住宅施工面积_累计值(万平方米),0.626865671642\nJiangsu,商品住宅施工面积_累计增长(%),0.850746268657\nJiangsu,商品住宅新开工施工面积_累计值(万平方米),0.746268656716\nJiangsu,商品住宅新开工施工面积_累计增长(%),0.746268656716\nJiangsu,商品住宅竣工面积_累计值(万平方米),0.701492537313\nJiangsu,商品住宅竣工面积_累计增长(%),0.835820895522\nJiangsu,住宅建设投资额_累计值(亿元),0.641791044776\nJiangsu,住宅建设投资额_累计增长(%),0.746268656716\nJiangsu,住宅施工面积_累计值(万平方米),0.65671641791\nJiangsu,住宅施工面积_累计增长(%),0.805970149254\nJiangsu,住宅竣工面积_累计值(万平方米),0.686567164179\nJiangsu,住宅竣工面积_累计增长(%),0.880597014925\nJiangsu,施工项目项目个数_累计值(个),0.701492537313\nJiangsu,施工项目项目个数_累计增减额(个),0.641791044776\nJiangsu,新开工项目项目个数_累计值(个),0.686567164179\nJiangsu,新开工项目项目个数_累计增减额(个),0.746268656716\nJiangsu,商业营业用房施工面积_累计值(万平方米),0.641791044776\nJiangsu,商业营业用房施工面积_累计增长(%),0.805970149254\nJiangsu,商业营业用房新开工施工面积_累计值(万平方米),0.791044776119\nJiangsu,商业营业用房新开工施工面积_累计增长(%),0.791044776119\nJiangsu,商业营业用房竣工面积_累计值(万平方米),0.701492537313\nJiangsu,商业营业用房竣工面积_累计增长(%),0.731343283582\nShanghai,房地产投资_累计值(亿元),0.854838709677\nShanghai,房地产投资_累计增长(%),0.854838709677\nShanghai,房地产住宅投资_累计值(亿元),0.838709677419\nShanghai,房地产住宅投资_累计增长(%),0.838709677419\nShanghai,固定资产投资完成额_累计值(亿元),0.820895522388\nShanghai,固定资产投资完成额_累计增长(%),0.626865671642\nShanghai,建筑安装工程固定资产投资完成额_累计值(亿元),0.805970149254\nShanghai,建筑安装工程固定资产投资完成额_累计增长(%),0.731343283582\nShanghai,设备工器具购置固定资产投资完成额_累计值(亿元),0.865671641791\nShanghai,设备工器具购置固定资产投资完成额_累计增长(%),0.701492537313\nShanghai,其他费用固定资产投资完成额_累计值(亿元),0.820895522388\nShanghai,其他费用固定资产投资完成额_累计增长(%),0.776119402985\nShanghai,企业单位数_累计值(个),0.507462686567\nShanghai,亏损企业_累计值(个),0.761194029851\nShanghai,亏损企业_上年同期累计值(个),0.746268656716\nShanghai,亏损企业_累计增长(%),0.761194029851\nShanghai,流动资产合计_累计值(亿元),0.567164179104\nShanghai,流动资产合计_上年同期累计值(亿元),0.537313432836\nShanghai,流动资产合计_累计增长(%),0.671641791045\nShanghai,应收帐款_累计值(亿元),0.55223880597\nShanghai,应收帐款_上年同期累计值(亿元),0.522388059701\nShanghai,应收帐款_累计增长(%),0.776119402985\nShanghai,存货_累计值(亿元),0.507462686567\nShanghai,存货_上年同期累计值(亿元),0.358208955224\nShanghai,存货_累计增长(%),0.746268656716\nShanghai,产成品_累计值(亿元),0.582089552239\nShanghai,产成品_上年同期累计值(亿元),0.477611940299\nShanghai,产成品_累计增长(%),0.761194029851\nShanghai,资产总计_累计值(亿元),0.507462686567\nShanghai,资产总计_上年同期累计值(亿元),0.462686567164\nShanghai,资产总计_累计增长(%),0.761194029851\nShanghai,负债合计_累计值(亿元),0.477611940299\nShanghai,负债合计_上年同期累计值(亿元),0.44776119403\nShanghai,负债合计_累计增长(%),0.746268656716\nShanghai,主营业务收入_累计值(亿元),0.731343283582\nShanghai,主营业务收入_上年同期累计值(亿元),0.746268656716\nShanghai,主营业务收入_累计增长(%),0.761194029851\nShanghai,主营业务成本_累计值(亿元),0.731343283582\nShanghai,主营业务成本_上年同期累计值(亿元),0.746268656716\nShanghai,主营业务成本_累计增长(%),0.776119402985\nShanghai,主营业务税金及附加_累计值(亿元),0.731343283582\nShanghai,主营业务税金及附加_上年同期累计值(亿元),0.731343283582\nShanghai,主营业务税金及附加_累计增长(%),0.820895522388\nShanghai,销售费用_累计值(亿元),0.746268656716\nShanghai,销售费用_上年同期累计值(亿元),0.776119402985\nShanghai,销售费用_累计增长(%),0.776119402985\nShanghai,管理费用_累计值(亿元),0.805970149254\nShanghai,管理费用_上年同期累计值(亿元),0.805970149254\nShanghai,管理费用_累计增长(%),0.582089552239\nShanghai,财务费用_累计值(亿元),0.776119402985\nShanghai,财务费用_上年同期累计值(亿元),0.835820895522\nShanghai,财务费用_累计增长(%),0.626865671642\nShanghai,利息支出_累计值(亿元),0.776119402985\nShanghai,利息支出_上年同期累计值(亿元),0.761194029851\nShanghai,利息支出_累计增长(%),0.626865671642\nShanghai,利润总额_累计值(亿元),0.731343283582\nShanghai,利润总额_上年同期累计值(亿元),0.761194029851\nShanghai,利润总额_累计增长(%),0.65671641791\nShanghai,亏损企业亏损总额_累计值(亿元),0.731343283582\nShanghai,亏损企业亏损总额_上年同期累计值(亿元),0.776119402985\nShanghai,亏损企业亏损总额_累计增长(%),0.761194029851\nShanghai,应交增值税_累计值(亿元),0.686567164179\nShanghai,应交增值税_上年同期累计值(亿元),0.686567164179\nShanghai,应交增值税_累计增长(%),0.820895522388\nShanghai,办公楼施工面积_累计值(万平方米),0.641791044776\nShanghai,办公楼施工面积_累计增长(%),0.761194029851\nShanghai,办公楼新开工施工面积_累计值(万平方米),0.776119402985\nShanghai,办公楼新开工施工面积_累计增长(%),0.791044776119\nShanghai,办公楼竣工面积_累计值(万平方米),0.776119402985\nShanghai,办公楼竣工面积_累计增长(%),0.835820895522\nShanghai,工业增加值_同比增长(%),0.716417910448\nShanghai,工业增加值_累计增长(%),0.671641791045\nShanghai,房地产施工面积_累计值(万平方米),0.597014925373\nShanghai,房地产施工面积_累计增长(%),0.716417910448\nShanghai,房地产新开工施工面积_累计值(万平方米),0.835820895522\nShanghai,房地产新开工施工面积_累计增长(%),0.731343283582\nShanghai,房地产竣工面积_累计值(万平方米),0.835820895522\nShanghai,房地产竣工面积_累计增长(%),0.865671641791\nShanghai,商品住宅施工面积_累计值(万平方米),0.611940298507\nShanghai,商品住宅施工面积_累计增长(%),0.761194029851\nShanghai,商品住宅新开工施工面积_累计值(万平方米),0.865671641791\nShanghai,商品住宅新开工施工面积_累计增长(%),0.701492537313\nShanghai,商品住宅竣工面积_累计值(万平方米),0.776119402985\nShanghai,商品住宅竣工面积_累计增长(%),0.925373134328\nShanghai,施工项目项目个数_累计值(个),0.761194029851\nShanghai,施工项目项目个数_累计增减额(个),0.238805970149\nShanghai,新开工项目项目个数_累计值(个),0.880597014925\nShanghai,新开工项目项目个数_累计增减额(个),0.328358208955\nShanghai,商业营业用房施工面积_累计值(万平方米),0.611940298507\nShanghai,商业营业用房施工面积_累计增长(%),0.791044776119\nShanghai,商业营业用房新开工施工面积_累计值(万平方米),0.805970149254\nShanghai,商业营业用房新开工施工面积_累计增长(%),0.791044776119\nShanghai,商业营业用房竣工面积_累计值(万平方米),0.865671641791\nShanghai,商业营业用房竣工面积_累计增长(%),0.835820895522\nShanghai,住宅建设投资额_累计值(亿元),0.805970149254\nShanghai,住宅建设投资额_累计增长(%),0.865671641791\nShanghai,住宅施工面积_累计值(万平方米),0.597014925373\nShanghai,住宅施工面积_累计增长(%),0.776119402985\nShanghai,住宅竣工面积_累计值(万平方米),0.776119402985\nShanghai,住宅竣工面积_累计增长(%),0.925373134328\nAnhui,企业单位数_累计值(个),0.477611940299\nAnhui,亏损企业_累计值(个),0.716417910448\nAnhui,亏损企业_上年同期累计值(个),0.761194029851\nAnhui,亏损企业_累计增长(%),0.776119402985\nAnhui,流动资产合计_累计值(亿元),0.373134328358\nAnhui,流动资产合计_上年同期累计值(亿元),0.417910447761\nAnhui,流动资产合计_累计增长(%),0.89552238806\nAnhui,应收帐款_累计值(亿元),0.477611940299\nAnhui,应收帐款_上年同期累计值(亿元),0.44776119403\nAnhui,应收帐款_累计增长(%),0.880597014925\nAnhui,存货_累计值(亿元),0.477611940299\nAnhui,存货_上年同期累计值(亿元),0.477611940299\nAnhui,存货_累计增长(%),0.776119402985\nAnhui,产成品_累计值(亿元),0.477611940299\nAnhui,产成品_上年同期累计值(亿元),0.507462686567\nAnhui,产成品_累计增长(%),0.880597014925\nAnhui,资产总计_累计值(亿元),0.492537313433\nAnhui,资产总计_上年同期累计值(亿元),0.492537313433\nAnhui,资产总计_累计增长(%),0.791044776119\nAnhui,负债合计_累计值(亿元),0.477611940299\nAnhui,负债合计_上年同期累计值(亿元),0.477611940299\nAnhui,负债合计_累计增长(%),0.850746268657\nAnhui,主营业务收入_累计值(亿元),0.701492537313\nAnhui,主营业务收入_上年同期累计值(亿元),0.686567164179\nAnhui,主营业务收入_累计增长(%),0.761194029851\nAnhui,主营业务成本_累计值(亿元),0.701492537313\nAnhui,主营业务成本_上年同期累计值(亿元),0.686567164179\nAnhui,主营业务成本_累计增长(%),0.791044776119\nAnhui,主营业务税金及附加_累计值(亿元),0.746268656716\nAnhui,主营业务税金及附加_上年同期累计值(亿元),0.716417910448\nAnhui,主营业务税金及附加_累计增长(%),0.791044776119\nAnhui,销售费用_累计值(亿元),0.701492537313\nAnhui,销售费用_上年同期累计值(亿元),0.701492537313\nAnhui,销售费用_累计增长(%),0.850746268657\nAnhui,管理费用_累计值(亿元),0.716417910448\nAnhui,管理费用_上年同期累计值(亿元),0.701492537313\nAnhui,管理费用_累计增长(%),0.89552238806\nAnhui,财务费用_累计值(亿元),0.731343283582\nAnhui,财务费用_上年同期累计值(亿元),0.686567164179\nAnhui,财务费用_累计增长(%),0.776119402985\nAnhui,利息支出_累计值(亿元),0.731343283582\nAnhui,利息支出_上年同期累计值(亿元),0.686567164179\nAnhui,利息支出_累计增长(%),0.850746268657\nAnhui,利润总额_累计值(亿元),0.701492537313\nAnhui,利润总额_上年同期累计值(亿元),0.701492537313\nAnhui,利润总额_累计增长(%),0.716417910448\nAnhui,亏损企业亏损总额_累计值(亿元),0.716417910448\nAnhui,亏损企业亏损总额_上年同期累计值(亿元),0.611940298507\nAnhui,亏损企业亏损总额_累计增长(%),0.880597014925\nAnhui,应交增值税_累计值(亿元),0.731343283582\nAnhui,应交增值税_上年同期累计值(亿元),0.746268656716\nAnhui,应交增值税_累计增长(%),0.805970149254\nAnhui,办公楼施工面积_累计值(万平方米),0.522388059701\nAnhui,办公楼施工面积_累计增长(%),0.776119402985\nAnhui,办公楼新开工施工面积_累计值(万平方米),0.761194029851\nAnhui,办公楼新开工施工面积_累计增长(%),0.731343283582\nAnhui,办公楼竣工面积_累计值(万平方米),0.716417910448\nAnhui,办公楼竣工面积_累计增长(%),0.805970149254\nAnhui,工业增加值_同比增长(%),0.850746268657\nAnhui,工业增加值_累计增长(%),0.820895522388\nAnhui,房地产投资_累计值(亿元),0.701492537313\nAnhui,房地产投资_累计增长(%),0.820895522388\nAnhui,房地产住宅投资_累计值(亿元),0.701492537313\nAnhui,房地产住宅投资_累计增长(%),0.865671641791\nAnhui,房地产施工面积_累计值(万平方米),0.567164179104\nAnhui,房地产施工面积_累计增长(%),0.791044776119\nAnhui,房地产新开工施工面积_累计值(万平方米),0.776119402985\nAnhui,房地产新开工施工面积_累计增长(%),0.805970149254\nAnhui,房地产竣工面积_累计值(万平方米),0.716417910448\nAnhui,房地产竣工面积_累计增长(%),0.820895522388\nAnhui,商品住宅施工面积_累计值(万平方米),0.597014925373\nAnhui,商品住宅施工面积_累计增长(%),0.791044776119\nAnhui,商品住宅新开工施工面积_累计值(万平方米),0.791044776119\nAnhui,商品住宅新开工施工面积_累计增长(%),0.731343283582\nAnhui,商品住宅竣工面积_累计值(万平方米),0.731343283582\nAnhui,商品住宅竣工面积_累计增长(%),0.835820895522\nAnhui,固定资产投资完成额_累计值(亿元),0.741935483871\nAnhui,固定资产投资完成额_累计增长(%),0.903225806452\nAnhui,建筑安装工程固定资产投资完成额_累计值(亿元),0.725806451613\nAnhui,建筑安装工程固定资产投资完成额_累计增长(%),0.822580645161\nAnhui,设备工器具购置固定资产投资完成额_累计值(亿元),0.758064516129\nAnhui,设备工器具购置固定资产投资完成额_累计增长(%),0.951612903226\nAnhui,其他费用固定资产投资完成额_累计值(亿元),0.709677419355\nAnhui,其他费用固定资产投资完成额_累计增长(%),0.790322580645\nAnhui,施工项目项目个数_累计值(个),0.746268656716\nAnhui,施工项目项目个数_累计增减额(个),0.686567164179\nAnhui,新开工项目项目个数_累计值(个),0.731343283582\nAnhui,新开工项目项目个数_累计增减额(个),0.731343283582\nAnhui,商业营业用房施工面积_累计值(万平方米),0.507462686567\nAnhui,商业营业用房施工面积_累计增长(%),0.910447761194\nAnhui,商业营业用房新开工施工面积_累计值(万平方米),0.746268656716\nAnhui,商业营业用房新开工施工面积_累计增长(%),0.865671641791\nAnhui,商业营业用房竣工面积_累计值(万平方米),0.716417910448\nAnhui,商业营业用房竣工面积_累计增长(%),0.880597014925\nAnhui,住宅建设投资额_累计值(亿元),0.701492537313\nAnhui,住宅建设投资额_累计增长(%),0.850746268657\nAnhui,住宅施工面积_累计值(万平方米),0.611940298507\nAnhui,住宅施工面积_累计增长(%),0.880597014925\nAnhui,住宅竣工面积_累计值(万平方米),0.716417910448\nAnhui,住宅竣工面积_累计增长(%),0.850746268657\nFujian,企业单位数_累计值(个),0.491803278689\nFujian,亏损企业_累计值(个),0.770491803279\nFujian,亏损企业_上年同期累计值(个),0.803278688525\nFujian,亏损企业_累计增长(%),0.786885245902\nFujian,流动资产合计_累计值(亿元),0.459016393443\nFujian,流动资产合计_上年同期累计值(亿元),0.459016393443\nFujian,流动资产合计_累计增长(%),0.770491803279\nFujian,应收帐款_累计值(亿元),0.524590163934\nFujian,应收帐款_上年同期累计值(亿元),0.524590163934\nFujian,应收帐款_累计增长(%),0.770491803279\nFujian,存货_累计值(亿元),0.459016393443\nFujian,存货_上年同期累计值(亿元),0.475409836066\nFujian,存货_累计增长(%),0.737704918033\nFujian,产成品_累计值(亿元),0.540983606557\nFujian,产成品_上年同期累计值(亿元),0.540983606557\nFujian,产成品_累计增长(%),0.737704918033\nFujian,资产总计_累计值(亿元),0.44262295082\nFujian,资产总计_上年同期累计值(亿元),0.475409836066\nFujian,资产总计_累计增长(%),0.770491803279\nFujian,负债合计_累计值(亿元),0.426229508197\nFujian,负债合计_上年同期累计值(亿元),0.459016393443\nFujian,负债合计_累计增长(%),0.83606557377\nFujian,主营业务收入_累计值(亿元),0.72131147541\nFujian,主营业务收入_上年同期累计值(亿元),0.754098360656\nFujian,主营业务收入_累计增长(%),0.72131147541\nFujian,主营业务成本_累计值(亿元),0.72131147541\nFujian,主营业务成本_上年同期累计值(亿元),0.754098360656\nFujian,主营业务成本_累计增长(%),0.754098360656\nFujian,主营业务税金及附加_累计值(亿元),0.737704918033\nFujian,主营业务税金及附加_上年同期累计值(亿元),0.72131147541\nFujian,主营业务税金及附加_累计增长(%),0.688524590164\nFujian,销售费用_累计值(亿元),0.72131147541\nFujian,销售费用_上年同期累计值(亿元),0.737704918033\nFujian,销售费用_累计增长(%),0.590163934426\nFujian,管理费用_累计值(亿元),0.754098360656\nFujian,管理费用_上年同期累计值(亿元),0.737704918033\nFujian,管理费用_累计增长(%),0.639344262295\nFujian,财务费用_累计值(亿元),0.737704918033\nFujian,财务费用_上年同期累计值(亿元),0.72131147541\nFujian,财务费用_累计增长(%),0.918032786885\nFujian,利息支出_累计值(亿元),0.737704918033\nFujian,利息支出_上年同期累计值(亿元),0.704918032787\nFujian,利息支出_累计增长(%),0.934426229508\nFujian,利润总额_累计值(亿元),0.72131147541\nFujian,利润总额_上年同期累计值(亿元),0.72131147541\nFujian,利润总额_累计增长(%),0.737704918033\nFujian,亏损企业亏损总额_累计值(亿元),0.704918032787\nFujian,亏损企业亏损总额_上年同期累计值(亿元),0.590163934426\nFujian,亏损企业亏损总额_累计增长(%),0.672131147541\nFujian,应交增值税_累计值(亿元),0.704918032787\nFujian,应交增值税_上年同期累计值(亿元),0.655737704918\nFujian,应交增值税_累计增长(%),0.918032786885\nFujian,办公楼施工面积_累计值(万平方米),0.417910447761\nFujian,办公楼施工面积_累计增长(%),0.731343283582\nFujian,办公楼新开工施工面积_累计值(万平方米),0.671641791045\nFujian,办公楼新开工施工面积_累计增长(%),0.716417910448\nFujian,办公楼竣工面积_累计值(万平方米),0.626865671642\nFujian,办公楼竣工面积_累计增长(%),0.731343283582\nFujian,工业增加值_同比增长(%),0.791044776119\nFujian,工业增加值_累计增长(%),0.805970149254\nFujian,房地产投资_累计值(亿元),0.701492537313\nFujian,房地产投资_累计增长(%),0.805970149254\nFujian,房地产住宅投资_累计值(亿元),0.701492537313\nFujian,房地产住宅投资_累计增长(%),0.686567164179\nFujian,房地产施工面积_累计值(万平方米),0.522388059701\nFujian,房地产施工面积_累计增长(%),0.731343283582\nFujian,房地产新开工施工面积_累计值(万平方米),0.716417910448\nFujian,房地产新开工施工面积_累计增长(%),0.686567164179\nFujian,房地产竣工面积_累计值(万平方米),0.671641791045\nFujian,房地产竣工面积_累计增长(%),0.731343283582\nFujian,商品住宅施工面积_累计值(万平方米),0.567164179104\nFujian,商品住宅施工面积_累计增长(%),0.731343283582\nFujian,商品住宅新开工施工面积_累计值(万平方米),0.761194029851\nFujian,商品住宅新开工施工面积_累计增长(%),0.716417910448\nFujian,商品住宅竣工面积_累计值(万平方米),0.671641791045\nFujian,商品住宅竣工面积_累计增长(%),0.701492537313\nFujian,固定资产投资完成额_累计值(亿元),0.65671641791\nFujian,固定资产投资完成额_累计增长(%),0.925373134328\nFujian,建筑安装工程固定资产投资完成额_累计值(亿元),0.671641791045\nFujian,建筑安装工程固定资产投资完成额_累计增长(%),0.865671641791\nFujian,设备工器具购置固定资产投资完成额_累计值(亿元),0.671641791045\nFujian,设备工器具购置固定资产投资完成额_累计增长(%),0.776119402985\nFujian,其他费用固定资产投资完成额_累计值(亿元),0.701492537313\nFujian,其他费用固定资产投资完成额_累计增长(%),0.805970149254\nFujian,施工项目项目个数_累计值(个),0.701492537313\nFujian,施工项目项目个数_累计增减额(个),0.835820895522\nFujian,新开工项目项目个数_累计值(个),0.716417910448\nFujian,新开工项目项目个数_累计增减额(个),0.65671641791\nFujian,商业营业用房施工面积_累计值(万平方米),0.477611940299\nFujian,商业营业用房施工面积_累计增长(%),0.746268656716\nFujian,商业营业用房新开工施工面积_累计值(万平方米),0.776119402985\nFujian,商业营业用房新开工施工面积_累计增长(%),0.626865671642\nFujian,商业营业用房竣工面积_累计值(万平方米),0.701492537313\nFujian,商业营业用房竣工面积_累计增长(%),0.626865671642\nFujian,住宅建设投资额_累计值(亿元),0.716417910448\nFujian,住宅建设投资额_累计增长(%),0.701492537313\nFujian,住宅施工面积_累计值(万平方米),0.597014925373\nFujian,住宅施工面积_累计增长(%),0.731343283582\nFujian,住宅竣工面积_累计值(万平方米),0.671641791045\nFujian,住宅竣工面积_累计增长(%),0.716417910448\n",
+			"file": "LCSS_Res.csv",
+			"file_size": 25856,
+			"file_write_time": 131256228460000000,
+			"settings":
+			{
+				"buffer_size": 19711,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Unix",
+				"scratch": true
+			}
+		},
+		{
+			"file": "DTW.py",
+			"settings":
+			{
+				"buffer_size": 1825,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "EDR.py",
+			"settings":
+			{
+				"buffer_size": 1734,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -296,16 +401,8 @@
 			"file": "Similarity.py",
 			"settings":
 			{
-				"buffer_size": 3611,
+				"buffer_size": 3609,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Similarity.sublime-project",
-			"settings":
-			{
-				"buffer_size": 107,
 				"line_ending": "Unix"
 			}
 		}
@@ -449,21 +546,43 @@
 	"expanded_folders":
 	[
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments",
-		"/Users/xieyongqing/Desktop/ElecSim/Data"
+		"/Users/xieyongqing/Desktop/ElecSim/Data",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui"
 	],
 	"file_history":
 	[
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/res_file.txt",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省办公楼施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省商业营业用房施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资构成情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省工业企业主要指标.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省工业增加值增长速度.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省房地产开发投资情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省房地产施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/EDR.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/DTW.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/LCSS_Res.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/LCSS.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/test.java",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Select/Zhejiang-Select-浙江省商品住宅施工竣工面积.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/select_path.txt",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/社会消费品零售总_累计增长.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/江苏%E7%9C价格指数.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/调度数据中心.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/生产日报.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/normilizeEle.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/ElecConsum.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/regulateEconomicData.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/splitProvinces.py",
+		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资住宅建设情况.csv",
+		"/Users/xieyongqing/Desktop/ElecSim/Experiments/SelectMonth.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/Similarity.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/sumOfProvinces.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/生产日报.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/社会消费品零售总_累计增长.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/ElecConsum.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Experiments/select_path.txt",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/调度数据中心.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Experiments/res_file.txt",
-		"/Users/xieyongqing/Desktop/ElecSim/Experiments/SelectMonth.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Select/Fujian-Select-福建省商品住宅施工竣工面积.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Experiments/regulateEconomicData.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/regulate_path.txt",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/path.txt",
 		"/Users/xieyongqing/Desktop/SLB/P_A分类/group_pa/relation_3660893201891288713_HK.arff",
@@ -472,19 +591,11 @@
 		"/Users/xieyongqing/Desktop/SLB/P_A分类/P_C.py",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Regulate-安徽省工业企业主要指标.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/Select-安徽省工业企业主要指标.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省办公楼施工竣工面积.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省商业营业用房施工竣工面积.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省工业增加值增长速度.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省房地产开发投资情况.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省房地产施工竣工面积.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/path.txt",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省商品住宅施工竣工面积.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资住宅建设情况.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资构成情况.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/sum-安徽.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Experiments/Similarity.sublime-project",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省固定资产投资项目情况.csv",
-		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽省工业企业主要指标.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Anhui/安徽.csv",
 		"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/SumOfProvinces.py",
 		"/Users/xieyongqing/Hexo/source/_posts/Sublime-配置C-环境.md",
@@ -553,24 +664,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "SelectMonth.py",
+					"file": "splitProvinces.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3598,
+						"buffer_size": 2290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								94
+								1674,
+								1674
 							]
 						],
 						"settings":
@@ -593,62 +704,63 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
+							"is_init_dirty_state": false,
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
@@ -657,24 +769,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Similarity.py",
+					"file": "fetch_data.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3611,
+						"buffer_size": 2204,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								656,
+								656
 							]
 						],
 						"settings":
@@ -684,12 +796,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										656,
+										657
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										651,
+										652
+									]
 								},
 								"unmatched":
 								{
@@ -697,79 +824,202 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
+							"is_init_dirty_state": false,
+							"open_with_edit": true,
+							"origin_encoding": "UTF-8",
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 971.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Similarity.sublime-project",
-					"semi_transient": true,
+					"file": "LCSS.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 107,
+						"buffer_size": 1680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1387,
+								1387
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1387,
+										1388
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1383,
+										1384
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 895.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "LCSS_Res.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19711,
 						"regions":
 						{
 						},
@@ -787,17 +1037,122 @@
 							{
 								"close":
 								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"in_converting": true,
+							"origin_encoding": "GB2312",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "DTW.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1549,
+								1549
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
 									"1":
 									[
-										105,
-										106
+										1549,
+										1550
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"Packages/BracketHighlighter/icons/single_quote.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -805,8 +1160,8 @@
 								{
 									"1":
 									[
-										0,
-										1
+										1545,
+										1546
 									]
 								},
 								"unmatched":
@@ -815,72 +1170,285 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1159.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "EDR.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1301,
+								1301
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
 							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1034.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Similarity.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								837,
+								842
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 13.0,
+						"translation.y": 1272.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -901,11 +1469,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.80822609795,
 			1.0
 		],
 		"rows":
@@ -917,7 +1492,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 40.0
+		"height": 230.0
 	},
 	"output.find_results":
 	{
@@ -927,7 +1502,7 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"pinned_build_system": "",
 	"project": "Similarity.sublime-project",
 	"replace":
 	{
@@ -969,7 +1544,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 269.0,
+	"side_bar_width": 262.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

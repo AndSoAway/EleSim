@@ -3,6 +3,8 @@
 
 import os, sys, codecs
 
+#把txt数据整理成csv文件
+
 def process(file_name):
 	#print(file_name)
 	file = codecs.open(file_name, 'r', 'GB2312')

@@ -3,8 +3,6 @@
 
 import os, sys, codecs
 
-#把天数据转换为月数据
-
 def sumEle(file_name):
 	file = codecs.open(file_name, 'r', 'utf-8')
 	month_data = []

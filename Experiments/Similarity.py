@@ -27,7 +27,7 @@ def process(prvn, fln1, fln2):
 			mtr = float(line_parts[idc + 1])
 			metrics[idc].append(mtr)
 
-	res_file = codecs.open('res_file.txt', 'a', 'utf-8')
+	res_file = codecs.open('res_file.csv', 'a', 'GBK')
 	for idc in range(mtr_cnt - 1):
 		metric = headers[idc + 1]
 		mtr_arr = metrics[idc]
@@ -62,14 +62,14 @@ def periodity(ele, mtr):
 		
 		cur_sim1 = similarity(move_ele_frwr, move_mtr_frwr)
 		cur_sim2 = similarity(move_ele_bckwr, move_mtr_bckwr)
-		print("x: " + str(x) + "cur_sim1: " + str(cur_sim1) + ", cur_sim2: " + str(cur_sim2))
+		#print("x: " + str(x) + "cur_sim1: " + str(cur_sim1) + ", cur_sim2: " + str(cur_sim2))
 		if cur_sim1 > least_sim:
 			least_sim = cur_sim1
 			chose_idc = x
 		if cur_sim2 > least_sim:
 			least_sim = cur_sim2
 			chose_idc = -1 * x
-	print(str(least_sim) + "," + str(chose_idc))
+	#print(str(least_sim) + "," + str(chose_idc))
 	return [least_sim, chose_idc]
 
 def similarity(ele, mtr):
@@ -95,7 +95,7 @@ if __name__ == "__main__":
 	"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Huadong/sum-华东.csv",
 	"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Jiangsu/sum-江苏.csv",
 	"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Shanghai/sum-上海.csv",
-	"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Zhengjiang/sum-浙江.csv"]
+	"/Users/xieyongqing/Desktop/ElecSim/Data/Provinces/Zhejiang/sum-浙江.csv"]
 	ele_files = {}
 	metric_files = {}
 	for flnm in ele_prvns:
@@ -117,5 +117,6 @@ if __name__ == "__main__":
 			print("Exception: Metrics has no responding Provinces")
 
 	for prvn in ele_files:
+		print(prvn)
 		for mtr_fl in metric_files[prvn]:
 			process(prvn, ele_files[prvn], mtr_fl) 
