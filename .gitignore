@@ -18,11 +18,7 @@ SigmodChina-Copy/
 crower2/
 crower2.zip
 
-SigmodChina/*
-!SigmodChina/*.tex
-!SigmodChina/*.bib
-!SigmodChina/*.cls
-!SigmodChina/*.sty 
+SigmodChina/.texpadtmp/
 
 Dongdong/
 Tana/
