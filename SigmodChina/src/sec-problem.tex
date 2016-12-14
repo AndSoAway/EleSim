@@ -1,0 +1,43 @@
+%!TEX root=../sig-alternate-sample.tex
+
+% Section Problem Formulation
+\section{Problem Formulation}
+In this section, we will formalize our work into a segement-similarity question and define the notations that we need in the blow.
+
+The time series of economic indicators and electricity consumption would be viewed as a segment. We should evaluate the correlation of economic indicators with electricity consumption through the similarity between the two segments like in Fig 1.[[[[[Here , we should  put one Picture of two examples]]]]] . Before we elaborate the concise similarity problem, we firstly define some relevant notations.
+\newcommand{\loci}[1]{\ensuremath{p^{#1}}}
+\newdef{definition}{Definition}
+\begin{definition}
+Suppose we have a series of data in \textit{n} months, each monthly data is composed by \textbf{\(date, val\)}, in which $date$ is the month, and $val$ is the value of economic indicator or electricity consumption. A \textit{segment $T$} is a sequence of data points, i.e.$This place is suspicious$, $T=\{\loci{1}, \loci{2}, \cdots, \loci{|T|}\}$,  where $\loci{k}$ is a data point. And $|T|$ is the number of data points in $T$.
+\end{definition}
+
+And then, we would use the area of the polygon enclosed by two segments to evaluate the relevance between the economic indicators and the electricity consumption. Given two segments, it is very obvious to see that the less the enclosed area of these two segments is, the more similar the tendency of these two series is. The area enclosed by two segments is usually calculate by:
+\begin{displaymath}
+\textbf{S} = \sum_{k=1}^{n-1}\Delta S_k	
+\end{displaymath}
+
+Each part of the enclosed polygon \textit{$\Delta S_k$} is that the area of shape enclosed by the two segments and vertical coordinates. According to the different tendencies, we can conclude just two cases.
+\begin{itemize}
+	\item Two segments doesn't intersect. Then, the enclosed part is a trapezoid, of which area is calculated as:
+\begin{equation}
+	\Delta S_k = \frac{(a + b) * (t_{k+1} - t_k)}{2}
+\end{equation}
+	\item Two segments intersects. Then, we can treat it as the sum of two triangles.
+\begin{equation}
+	\Delta S_k = \frac{a * h_i}{2} + \frac{b * h_j}{2}, h_i + h_j = t_{k+1} - t_k 
+\end{equation}
+\end{itemize} 
+
+Though we have proposed the area of two segments, it cannot be used to evaluate the similarity of two segments. We want to compare the tendency of two indexes. So, case may be that if two lines goes in the same direction but their distance is very long, we still get the much larger area. So, we can move one of the two lines vertically. With different distances, we would get different area, from which the least area is the most appropriate value to reflect the coincide. So, we could use the notation of MINS as the real area.
+\begin{equation}
+	MINS = \min{\textbf{S}}	
+\end{equation}
+
+Given the statistical report, we could know that different indicators exist the time offset. Given two segments, if we move one of them horizontally, we could get different \textbf{MINS}. Among all the results, the time offset corresponding to the least val is a candidate for the real time offset. Once we got the least similarity for economic indicators, we could rank the similarities of these indicators and found the top-k indicators closely connected to the electricity consumption. We can formalize our problem as one top-k problem as follow:
+\begin{definition}
+	[[[This part, we can put the top-K problem]]]]
+\end{definition} 
+
+\begin{equation}
+AreaSIM(Q, T) = 1 - \frac{\int_{0}^{n}D_{Q,T}(t)dt}{n}	
+\end{equation}

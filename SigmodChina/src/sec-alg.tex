@@ -1,0 +1,66 @@
+%!TEX root=../sig-alternate-sample.tex
+
+% Section Algorithms
+\section{Algorithms}
+In this section, we describe a novel top-k algorithm based on the area similarity to find the top-k relevant economic indicators. 
+\subsection{Similarity}
+
+While there are several similarity methods, we can compare other empirical methods with our method. 
+
+DTW(Dynamic Time Warping) is an similarity method that do not require two trajectories to be the same length, and it would allow the time shifting by duplicating the previous element.  Time shifting is beneficial for the shape fitting but it is confusing that allow several points to match one point in another trajectory. Empirically, it is unreasonable to owe economic indicators of several months to the sequence of one electricity consumption of one month.
+\begin{equation}
+	DTW(R, S) = \left\{
+	\begin{array}{ll}
+		0,  & \text{R and S is empty}  \\
+		\infty,  & \text{R or S is empty}  \\
+		dist(r1, s1) + min & \{DTW(Rest(R), Rest(S)),  \\
+		 DTW(Rest(R), S), & DTW(R, Rest(S))\}, otherwise
+	\end{array}
+	\right.
+\end{equation} 
+DTW notates the distance between two trajectories, so we can define the DTWSIM based on the DTW distance:
+\begin{definition}
+	DTWSIM(R, S) = 1 - $\frac{DTW(R, S)}{min(\text(|R|, |S|)}$
+\end{definition}
+
+LCSS(Longest Common SubSequence) model is an efficient model that can deal with the outliers. Not only that LCSS allows different sampling rates, but also it will omit the points, which are too far away from the other points. LCSS is an variant of the edit distance, value of which notates the count of enough close point-pair. We need to input two parameters:
+\begin{itemize}
+	\item $\sigma$: the offset of two points
+	\item $\epsilon$: the matching threshold 
+\end{itemize} 
+\begin{equation}
+	LCSS(R, S)_{\epsilon, \sigma} = \left\{
+	\begin{array}{ll}
+		0, & \text{R or S is empty} \\
+		1 + LCSS_{\epsilon, \sigma}(Head(R), Head(S)), \\
+		\text{if $|r_n - s_m| \leq \sigma and |n - m| \leq \epsilon$} \\
+		max{LCSS_{\epsilon, \sigma}(Head(R), S), LCSS_{\epsilon, \sigma}(R, Head(S))}, & otherwise
+	\end{array}
+	\right.
+\end{equation}
+
+LCSS notates the count of matching point pair, so we can define the LCSSSIM:
+\begin{equation}\label{sim:less}
+	LCSSSIM(R,S)=\frac{LCSS_{\epsilon ,\sigma }(R,S)}{\min(R,S)}
+\end{equation}
+
+EDR is another variant of edit distance, which define that the cost of a replace, insert, or delete operation is only 1. Instead of omitting the outliers in the LCSS and using the distance directly in DTW, the EDR reduces effect of the outlier by regulating the distance between a pair of elements to two values, 0 and 1. Like DTW, it also conduct the time shifting method for better shape fitting for two trajectories. EDR distance is defined such:
+\begin{equation}
+	EDR(R, S) = \left\{
+	\begin{array}{ll}
+		n & \text{if m = 0} \\
+		m & \text{if n = 0} \\
+		\multicolumn{2}{l}{\text{min\{EDR(Rest(R), Rest(S)) + subcost,}} \\
+		\multicolumn{2}{l}{EDR(Rest(R), S) + 1, } \\
+		\multicolumn{2}{l}{EDR(R, Rest(S)) + 1\}, otherwise}  
+	\end{array}
+	\right.
+\end{equation}
+where subcost = 0 if $|r1 - s1| \leq \epsilon$ and subcost = 1 otherwise.
+
+EDR distance notates the distance between two trajectories, so we can define the similarity of two trajectories $EDRSIM$ as:
+\begin{equation}
+	EDRSIM=1 - \frac{EDR(R,S)}{min(|R|, |S|)}
+\end{equation} 
+\subsection{Lagging}
+This paper proposes four similarity metrics:DISSIM, DTWSIM, LCSSSIM, EDRSIM. According to the related report, there exist the lagging between the electricity consumption and economic indicators. In order to verify the lagging, we choose part of the time intervals with time offset, and then calculate the most highest similarity value. Meanwhile, we could get the time lag of these metrics. 
