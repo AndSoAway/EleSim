@@ -11,6 +11,9 @@ class Edr:
 		self.n = len(ele)
 		self.m = len(indicator)
 		self.res = []
+
+	def initRes(self):
+		self.res = []
 		for i in range(self.n + 1):
 			arr = []
 			for j in range(self.m + 1):
@@ -26,8 +29,35 @@ class Edr:
 		return 0 if offset < self.trh else 1.0
 
 	def getSimilarity(self):
-		res = 1 - self.edr(self.ele, self.indicator) / max(self.n, self.m)
+		n = len(self.ele)
+		m = len(self.indicator)
+		min_len = min(n, m)
+		self.initRes()
+		res = 1 - self.edr(self.ele[:min_len], self.indicator[:min_len]) / min_len
 		return res
+
+	def getLagging(self):
+		n = len(self.ele)
+		m = len(self.indicator)
+		min_len = min(n, m)
+		ele = self.ele[:min_len][12:-12]
+		indicator = self.indicator[:min_len]
+		all_len = len(ele)
+		sim_max = float('-inf')
+		offset = 0
+		for x in range(12):
+			cur_indc = indicator[11-x:13-x]
+			self.initRes()
+			cur_sim = 1 - self.edr(ele, cur_indc) / all_len
+			if cur_sim > sim_max:
+				sim_max = cur_sim
+				offset = x + 1
+			cur_indc = indicator[13+x:] if x == 11 else indicator[13+x:-11+x]
+			cur_sim = 1 - self.edr(ele, cur_indc) / all_len
+			if cur_sim > sim_max:
+				sim_max = cur_sim
+				offset = -(x + 1)
+		return [sim_max, offset]
 
 	def edr(self, ele, indicator):
 		n = len(ele)
@@ -60,7 +90,11 @@ if __name__ == "__main__":
 		for indicator in index:
 			#print(str(len(ele)) + ", " + str(len(indicator)))
 			edr = Edr(ele, indicator['data'], trh)
-			res = edr.getSimilarity()
-			print("res:" + str(res))
-			res_file.write(prvn + ',' + indicator['name'] + ',' + str(res) + os.linesep)
+			ori = edr.getSimilarity()
+			lagging = edr.getLagging()
+			if ori > lagging[0]:
+				lagging[0] = ori
+				lagging[1] = 0
+			#print("res:" + str(res))
+			res_file.write(prvn + ',' + indicator['name'] + ',' + str(ori) + ',' + str(lagging[0]) + ',' + str(lagging[1]) + os.linesep)
 	res_file.close()
