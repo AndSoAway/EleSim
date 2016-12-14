@@ -20,6 +20,35 @@ Firstly, we will compare the top 10 indicators that mostly close to the electric
 	Jaccard(A, B) = \frac{\texttt{|A intersect B|}}{\texttt{|A union B|}}
 \end{equation} 
 where the $|A|$ notates the count of element in set $A$. Obviously, the value would increase if there are more elements overlapping in these two sets. We could use the DTW method as baseline to evaluate the Jaccard similarity between the results of these methods in different provinces. From the figure~\ref{fig:Jaccard}, we can see that in the top ten indicators, the jaccard similarity of DTW and other methods lie from 0.25 to 0.43, espically the Zhejiang Province, of which results are higher than other provinces. The fact that we can get same indicators in the top ten indicators gives a strong support to the viewpoint that these indicators have a relationship with the electricity consumption.
+
+\begin{figure}
+	\centering
+	\includegraphics[height=2in, width=1.9in]{area-ele}
+	\caption{AreaSim Top One}
+	\label{fig:AreaSim}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=2in, width=1.9in]{dtw_ele}
+	\caption{DTW Top One}
+	\label{fig:DTW}	
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=2in, width=1.9in]{lcss-ele}
+	\caption{LCSS Top One}
+	\label{fig:LCSS}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=2in, width=1.9in]{edr-ele}
+	\caption{EDR Top One}
+	\label{fig:EDR}
+\end{figure}
+
 \begin{figure}
 	\centering
 	\includegraphics[height=2in, width=1.9in]{dtw_jaccard_similarity}
