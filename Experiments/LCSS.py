@@ -13,6 +13,9 @@ class LCSS:
 		self.n = len(ele)
 		self.m = len(indicator)
 		self.res = []
+
+	def initRes(self):
+		self.res = []
 		for i in range(self.n + 1):
 			arr = []
 			for j in range(self.m + 1):
@@ -23,11 +26,35 @@ class LCSS:
 		for j in range(self.m + 1):
 			self.res[0][j] = 0 
 
+	def getLagging(self):
+		n = len(self.ele)
+		m = len(self.indicator)
+		min_len = min(n, m)
+		ele = self.ele[:min_len][12:-12]
+		indicator = self.indicator[:min_len]
+		all_len = len(ele)
+		sim_max = float('-inf')
+		offset = 0
+		for x in range(12):
+			cur_indc = indicator[11-x:-13-x]
+			self.initRes()
+			cur_sim = self.lcss(ele, cur_indc) / all_len
+			if cur_sim > sim_max:
+				sim_max = cur_sim
+				offset = x + 1
+			cur_indc = indicator[13+x:] if x == 11 else indicator[13+x:-11+x]
+			cur_sim = self.lcss(ele, cur_indc) / all_len
+			if cur_sim > sim_max:
+				sim_max = cur_sim
+				offset = -(x + 1)
+		return [sim_max, offset]
+
 	def getSimilarity(self):
+		self.initRes()
 		res = self.lcss(self.ele, self.indicator)
-		print("res: " + str(res))
+		#print("res: " + str(res))
 		cnt =  float(min(self.n, self.m))
-		print("cnt: " + str(cnt))
+		#print("cnt: " + str(cnt))
 		return res / cnt
 
 	def isClose(self, ele, indicator):
@@ -63,6 +90,10 @@ if __name__ == '__main__':
 		index = array['val']
 		for indicator in index:
 			lcss = LCSS(ele, indicator['data'], trh, offset)	
-			res = lcss.getSimilarity()
-			res_file.write(prvn + ',' + indicator['name'] + ',' + str(res) + os.linesep)
+			ori = lcss.getSimilarity()
+			lagging = lcss.getLagging()
+			if ori > lagging[0]:
+				lagging[0] = ori
+				lagging[1] = 0
+			res_file.write(prvn + ',' + indicator['name'] + ',' + str(ori) + ',' + str(lagging[0]) + ',' + str(lagging[1]) + os.linesep)
 	res_file.close()

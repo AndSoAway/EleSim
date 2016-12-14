@@ -24,7 +24,7 @@ def get_data(mtr_fl):
 		line_parts = line[:line.find(os.linesep)].split(',')
 		for idc in range(mtr_cnt - 1):
 			mtr = float(line_parts[idc + 1])
-			metrics[idc]['data'].append(mtr)
+			metrics[idc]['data'].insert(0, mtr)
 	return metrics
 
 #Get: Province: ['ele': ] ['val': []]

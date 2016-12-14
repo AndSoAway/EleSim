@@ -1,0 +1,8 @@
+####各个指标的相似度####
+region EDR LCSS Area
+#===================
+Anhui 0.25 0.25 0.33
+Zhejiang 0.43 0.54 0.25
+Jiangsu 0.33 0.25 0.43
+Shanghai 0.33 0.33 0.54
+Fujian 0.33 0.43 0.33
