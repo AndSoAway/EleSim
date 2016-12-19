@@ -58,6 +58,6 @@ def jaccard(data):
 	res.close()
 
 if __name__ == "__main__":
-	flnms = ['DTW_Res.csv', 'EDR_Res.csv', 'LCSS_Res.csv', 'res_file.csv']
+	flnms = ['DTW_Res.csv', 'EDR_Res.csv', 'LCSS_Res.csv', 'Area_Sim.csv']
 	data = fetch_data(flnms)
 	jaccard(data)

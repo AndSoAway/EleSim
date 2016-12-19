@@ -83,10 +83,38 @@ where the $|A|$ notates the count of element in set $A$. Obviously, the value wo
 We have the dataset of electricity consumption and economic indicators lasting for sixty seven months. As is known, economic activities has 
 periodicity, which is usually less than one year. Meanwhile, most of our economic indicators are evaluated monthly, so we should view one month as time unit. Taking our data as time series, We extract the middle part of our data intercepting the first last twelve month. And then, keeping the length of electricity consumption data, we move the economic indicator data forward and backward, getting different similarity, from which we could get the largest similarity. The moving month responding to the largest similarity is the lagging time offset we are seeking for. From the fig~\ref{fig:lagdis}, we can see that, different provinces has different lagging distribution.
  
-Different lagging time offsets has different instructions for prediction of economic tendency and electricity consumption. The negative lagging time-offset value means that the current electricity consumption has a closer relationship with the economic indicators if we chose the earlier economic indicators. Therefore, we can predict the later electricity consumption using current economic indicators. Otherwise, if the lagging time-offset value is positive, we can predict the economic indicators using current electricity consumption.   
+Different lagging time offsets has different instructions for prediction of economic tendency and electricity consumption. The negative lagging time-offset value means that the current electricity consumption has a closer relationship with the economic indicators if we chose the later economic indicators. Therefore, we can predict the later economic indicators using current electricity consumption. Otherwise, if the lagging time-offset value is positive, we can predict the electricity consumption using current economic indicators.   
 \begin{figure}
 	\centering
-	\includegraphics[height=1in, width=2in]{lagging_distribution}
-	\caption{haha}
-	\label{fig:lagdis}
+	\includegraphics[height=1in, width=2in]{anhui_lag_dis}
+	\caption{Anhui Lagging Time Distribution}
+	\label{fig:anhui_lag}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=1in, width=2in]{fujian_lag_dis}
+	\caption{Fujian Lagging Time Distribution}
+	\label{fig:fujian_lag}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=1in, width=2in]{jiangsu_lag_dis}
+	\caption{Jiangsu Lagging Time Distribution}
+	\label{fig:jiangsu_lag}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=1in, width=2in]{shanghai_lag_dis}
+	\caption{Shanghai Lagging Time Distribution}
+	\label{fig:shanghai_lag}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=1in, width=2in]{zhejiang_lag_dis}
+	\caption{Zhejiang Lagging Time Distribution}
+	\label{fig:zhejiang_lag}
 \end{figure}
