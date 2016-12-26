@@ -1,21 +1,42 @@
 %!TEX root=../sig-alternate-sample.tex
 
 \section{Introduction}
-China has gone through a rapid economic growth in the past three decades, and economy boosting in east china area has always been a highlight. Ever since, electricity has been a powerful catalyst for social development and economic growth. Empirically, economic fluctuation would cause changes in electricity consumption and electricity consumption can also reflect the economic change. Nowadays, the GDP growth has slower to blew 7\%, which officially is called "new normal". Economic policies would adjust to this new situation, thus asking energy strategies to change. New situation has raised many command for the research to the relationship between the economic indicators and the electricity consumption. 
+China has gone through a rapid economic growth in the past three decades, and economy boosting in east china area has always been a highlight. Ever since, electricity has been a powerful catalyst for social development and economic growth. Empirically, economic fluctuation would cause changes in electricity consumption and electricity consumption can also reflect the economic change. Nowadays, the GDP growth has slowered to blew 7\%, which officially is called "new normal". Economic policies would adjust to this new situation, thus asking energy strategies to change. New situation has raised many command for the research to the relationship between the economic indicators and the electricity consumption. 
 
 Historically, there has been lots of work in the causal relationship between economic growth and electricity consumption, most of which used the regression or statistical method traditionally. Many previous work mainly focused on the simple GDP. The study of the relationship between energy consumption and economic growth started with the seminal work of \cite{kraft:relationship}, in which causality between the energy consumption and GNP growth was found using Granger test. Subsequently, actual circumstances in the developed countries was studied like the United Kingdom, Germany, Italy\cite{yu:causal, erol1987causal}. Due to the boosting prosperity, Asian economy also attracted the eyes of researchers like South Korea and Singapore. The cointegration and error-correction models were also applied to research from the viewpoint of the time-series\cite{glasure1998cointegration}.
 
 But these works cannot focus the similarity of tendency treat the economic development process as a whole. Meanwhile, not only the GDP or GNP but also many other economic indicators in many fields such as industry, investment, etc, have strong ties with the electric power metrics. Also, traditional work researched the whole country, but we all know that regional developmental difference could be so astonishingly large that the result could not reflect the true closeness between electricity and economy.  
 
-From another viewpoint, the economic indicators and electricity consumption can be viewed as time series data, which are similar to the trajectory. A traditional trajectory is a sequence of sample points consisting of geo-location and timestamp. Similarly, both the economic indicators and electricity consumption data consists of the value and timestamp. Meanwhile, we can compare trajectory similarity using many methods focusing on different advantages. Our work in this paper would focus on the exploit of internal link between economic indicators and electricity consumption using trajectory similarity, which is much novel comparing to the previous work on the relationship between economic indicators and electricity consumption. 
+From another viewpoint, the economic indicators and electricity consumption can be viewed as time series data, which are similar to the trajectory. A traditional trajectory is a sequence of sample points consisting of geo-location and timestamp. Similarly, both the economic indicators and electricity consumption data consists of the value and timestamp. Therefore, we can compare trajectory similarity using many methods focusing on different characteristics. Our work in this paper would focus on the exploit of internal link between economic indicators and electricity consumption using trajectory similarity, which is much novel comparing to the previous work on the relationship between economic indicators and electricity consumption. 
 
-To address this problem, we propose a trajectory-similarity framework, which allows us to select the top-k closely relevant indicators using the trajectory similarity and verify the lagging time between indicators and electricity consumption. Firstly, we normalize the indicator data and electricity data to make them comparable, and then . Compare to the previous work, our paper make the following contributions.
-\begin{itemize}
-	\item We proposed an similarity metrics that
-	\item We focused on specific provinces in the east China.
-	\item Quantitive indicators are tested and the most closely connected are sought.
-\end{itemize}
+To address this problem, we propose a trajectory-similarity framework, which allows us to select the top-k closely relevant indicators using the trajectory similarity and verify the lagging time between indicators and electricity consumption. Firstly, we normalize the indicator data and electricity data to make them comparable. We also proposed a similarity method called AreaSim, which need us to calculate the least area enclosed by two trajectories. Since we seek for the similarity of the shape as to the trajectories, we do not need to focus on the original polygon enclosed by trajectories. As shown in Fig~\ref{fig:area-exa}, the original polygon enclosed by trajectory $T$ and $Q$ is such large that the high similarity between these two trajectories cannot be described. Then, we move the trajectory $Q$ vertically getting a set of candidate trajectory set such as $\{Q_1, Q_2, Q_3, \cdots \}$, and from the candidate set, we can find out one trajectory that has the least area with trajectory $T$. Obviously, it is the least area that we should use to calculate the similarity. Meanwhile, it is known that economic activities would last for some time and affect the related metrics which are measured afterward. As elaborated in Fig~\ref{fig:lag-exa}, we want to compare the shape of trajectory $T$ and $Q$. If we move the $Q$ horizontally, we can get the candidate trajectory set such as $\{Q_1, Q_2, \cdots \}$. From the candidate set, we could find a candidate trajectory such as $Q_2$, which has biggest similarity. The time offset between $Q_2$ and $Q$ is the lagging time that exists in two metrics represented by $T$ and $Q$. 
+\begin{figure}
+	\centering
+	\includegraphics{AreaSim-Example}
+	\caption{AreaSim Example}
+	\label{fig:area-exa}
+\end{figure}
 
-The rest part of this paper is organized as follows. We formalize our question in section 2 and introduce our algorithms in section 3. In section 4, we will elaborate our experiments and highlight our contributions. At last, the section 5 will give the conclusion and the future work.
+\begin{figure}
+	\centering
+	\includegraphics{Lagging-Example}
+	\caption{Lagging Example}
+	\label{fig:lag-exa}
+\end{figure}
 
-Consequently, the study of the casual relationship between economic indicators and the electricity consumption would shed light on future energy policies, such as the energy conservation, the planning of capacity expansion and the reliable supply of electricity.
+To summarize, we make the following contributions. 
+
+\vspace{.25em}
+\noindent (1) We propose a new similarity function and an efficient framework to compute the trajectory similarity and the lagging time between electricity consumption and economic indicators.
+
+\vspace{.25em}
+\noindent (2) We compare different trajectory similarity methods others proposed and implement them correctly. Creatively, we apply these trajectory similarity on the economic data and devise efficient techniques to quicken the computation.  
+
+\vspace{.25em}
+\noindent (3) We have conducted an extensive set of experiments on real-world datasets. Instead of focusing on the entire country, we make efforts at the specific provinces. Experimental results show that our algorithm achieves high quality and efficiency. We design various experiments to probe data in east China and get meaningful conclusions.
+
+\vspace{.25em}
+
+The rest of the paper is organized as follows. We formalize our problem in Section~\ref{sec:prem} and introduce our framework in Section~\ref{sec:alg}. Experimental results are provided in Section~\ref{sec:exp}. We review related work in Section~\ref{sec:rel-wor} and conclude the paper in Section~\ref{sec:con}.
+
+%Consequently, the study of the casual relationship between economic indicators and the electricity consumption would shed light on future energy policies, such as the energy conservation, the planning of capacity expansion and the reliable supply of electricity.

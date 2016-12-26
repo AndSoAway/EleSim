@@ -1,20 +1,29 @@
 %!TEX root=../sig-alternate-sample.tex
 
 % Section Problem Formulation
-\section{Problem Formulation}
-In this section, we will formalize our work into a segement-similarity question and define the notations that we need in the blow.
 
-The time series of economic indicators and electricity consumption would be viewed as a segment. We should evaluate the correlation of economic indicators with electricity consumption through the similarity between the two segments like in Fig 1.[[[[[Here , we should  put one Picture of two examples]]]]] . Before we elaborate the concise similarity problem, we firstly define some relevant notations.
+%\vspace{-1.5em}
+\section{Problem Formulation} \label{sec:prem}
+In this section, we will formalize our work into a time series similarity question and define the notations that we need in the blow.
+
+Traditionally, the time series of economic indicators and electricity consumption would be analyzed as point series ignoring the shape of lines connecting these points. Before we elaborate the concise similarity problem, we first give a formal definition of a time series. 
+
 \newcommand{\loci}[1]{\ensuremath{p^{#1}}}
 \newdef{definition}{Definition}
 \begin{definition}
-Suppose we have a series of data in \textit{n} months, each monthly data is composed by \textbf{\(date, val\)}, in which $date$ is the month, and $val$ is the value of economic indicator or electricity consumption. A \textit{segment $T$} is a sequence of data points, i.e.$This place is suspicious$, $T=\{\loci{1}, \loci{2}, \cdots, \loci{|T|}\}$,  where $\loci{k}$ is a data point. And $|T|$ is the number of data points in $T$.
+A time series $T$ is a series of data points indexed in time order, i.e., $T=\{\loci{1}, \loci{2}, \cdots, \loci{|T|}\}$, where $\loci{k}$ is a discrete-time data point and |T| is the number of sample points. Discrete-time data point $\loci{k}$ is composed by $\left(D,V\right)$, where $D$ is the date and $V$ is the value.
 \end{definition}
 
-And then, we would use the area of the polygon enclosed by two segments to evaluate the relevance between the economic indicators and the electricity consumption. Given two segments, it is very obvious to see that the less the enclosed area of these two segments is, the more similar the tendency of these two series is. The area enclosed by two segments is usually calculate by:
+Two adjacent data point on $T$ form a line and $T$ has $|T|-1$ lines. As to the electricity consumption and economic indicators data, the time unit is month usually. The broken line connecting the time series data can be analyzed as trajectory since it has a sequence of points. We will refer to the \textbf{broken line} as the \textbf{trajectory}.
+%Suppose we have a series of data in \textit{n} months, each monthly data is composed by \textbf{\(date, val\)}, in which $date$ is the month, and $val$ is the value of economic indicator or electricity consumption. A \textit{segment $T$} is a sequence of data points, i.e.$This place is suspicious$, $T=\{\loci{1}, \loci{2}, \cdots, \loci{|T|}\}$,  where $\loci{k}$ is a data point. And $|T|$ is the number of data points in $T$.
+
+Given two trajectories $T$ and $Q$, there is a enclosed polygon if we connect the starting points and . we would use the area of the polygon enclosed by them to evaluate the relevance. It is very obvious to see that the less the enclosed area of these two trajectories is, the more similar the tendency of these two series is. Also, the time interval should be kept the same in two trajectories. The area enclosed by two trajectories can be defined as:
+
+\begin{definition}	
 \begin{displaymath}
 \textbf{S} = \sum_{k=1}^{n-1}\Delta S_k	
 \end{displaymath}
+\end{definition}
 
 Each part of the enclosed polygon \textit{$\Delta S_k$} is that the area of shape enclosed by the two segments and vertical coordinates. According to the different tendencies, we can conclude just two cases.
 \begin{itemize}

@@ -1,6 +1,25 @@
 %!TEX root=../sig-alternate-sample.tex
 
-\section{Experiments}
+\begin{figure*}[!t]
+	\vspace{-2em}
+	\hspace*{-1em}\subfigure[AreaSim Top One]{
+		\hspace*{-1em}\epsfig{figure=area-ele.eps,width=0.18\textwidth\label{fig:AreaSim}}
+	}
+	\hspace*{-1em}\subfigure[DTW Top One]{
+		\hspace*{-1em}\epsfig{figure=dtw_ele.eps,width=0.18\textwidth\label{fig:DtwSim}}
+	}
+	\hspace*{-1em}\subfigure[LCSS Top One]{
+		\hspace*{-1em}\epsfig{figure=lcss-ele.eps,width=0.18\textwidth\label{fig:LcssSim}}
+	}
+	\hspace*{-1em}\subfigure[EDR Top One]{
+		\hspace*{-1em}\epsfig{figure=edr-ele.eps,width=0.18\textwidth\label{fig:EdrSim}}
+	}
+	\vspace{-1.5em}
+	\caption{Indicators Most Close to Electricity Consumption in Different Methods. \label{fig:closeindi}}
+	\vspace{-1.5em}
+\end{figure*}
+
+\section{Experiments} \label{sec:exp}
 \subsection{Data Preprocessing}
 Different data source supply data with different dimensions. So, we must normalize the data to make them comparable. 
 Given a line $S = [(d_1, v_1), \cdots, (d_n, v_n)]$, we can normalize its value using the Min-Max scaling method:
@@ -13,7 +32,6 @@ Normalization is recommended so that the distance between two lines is invariant
 We have prepared two categories of dataset: economic indicators and the electricity consumption. The first dataset is crawled from the website of National Bureau of Statistics of China. It consists of various of economic indicators monthly in consumer price, industry, fixed assets investment and domestic trading etc, that lasts about recent fifteen years. The second dataset is about the electricity consumption of each day in the east China, which includes Anhui, Fujian, Shanghai, Jiangsu, Zhejiang. In order to ensure the comparability, we sum the daily record of electricity consumption into one new record representing the electricity consumption of the corresponding month. 
 
 We implemented the proposed similarity method as described in the previous sections and presented the experimental results. Our experiments were taken on a MAC OS X at 2.7 GHz with 8GB RAM.
-
 \subsection{Similarity}
 Firstly, we will compare the top 10 indicators that mostly close to the electricity consumption. Table~\ref{tab:topindi} shows the top-ten indicators in Anhui Provinces. We could use the Jaccard similarity to evaluate how the results of different methods are relevant. Given set A and B, 
 \begin{equation}
@@ -21,37 +39,38 @@ Firstly, we will compare the top 10 indicators that mostly close to the electric
 \end{equation} 
 where the $|A|$ notates the count of element in set $A$. Obviously, the value would increase if there are more elements overlapping in these two sets. We could use the DTW method as baseline to evaluate the Jaccard similarity between the results of these methods in different provinces. From the figure~\ref{fig:Jaccard}, we can see that in the top ten indicators, the jaccard similarity of DTW and other methods lie from 0.25 to 0.43, espically the Zhejiang Province, of which results are higher than other provinces. The fact that we can get same indicators in the top ten indicators gives a strong support to the viewpoint that these indicators have a relationship with the electricity consumption.
 
-\begin{figure}
-	\centering
-	\includegraphics[height=2in, width=1.9in]{area-ele}
-	\caption{AreaSim Top One}
-	\label{fig:AreaSim}
-\end{figure}
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[height=1in, width=0.9in]{area-ele}
+%	\caption{AreaSim Top One}
+%	\label{fig:AreaSim}
+%\end{figure}
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[height=1in, width=0.9in]{dtw_ele}
+%	\caption{DTW Top One}
+%	\label{fig:DTW}	
+%\end{figure}
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[height=1in, width=0.9in]{lcss-ele}
+%	\caption{LCSS Top One}
+%	\label{fig:LCSS}
+%\end{figure}
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[height=1in, width=0.9in]{edr-ele}
+%	\caption{EDR Top One}
+%	\label{fig:EDR}
+%\end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[height=2in, width=1.9in]{dtw_ele}
-	\caption{DTW Top One}
-	\label{fig:DTW}	
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height=2in, width=1.9in]{lcss-ele}
-	\caption{LCSS Top One}
-	\label{fig:LCSS}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height=2in, width=1.9in]{edr-ele}
-	\caption{EDR Top One}
-	\label{fig:EDR}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height=2in, width=1.9in]{dtw_jaccard_similarity}
+	\includegraphics[height=1in, width=0.9in]{dtw_jaccard_similarity}
 	\caption{Jaccard Similarity Based on DTW}
 	\label{fig:Jaccard}
 \end{figure}
