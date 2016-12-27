@@ -1,0 +1,53 @@
+%!TEX root=../sig-alternate-sample.tex
+
+\begin{figure}[!t]
+\linesnumbered \SetVline \setcounter{algocf}{0}
+
+\begin{algorithm}[H]
+\label{alg:areasim} \caption{AreaSim($T$, $Q$)}
+\KwIn{
+ 	$T$: economic indicator trajectory \\
+ 	\hspace{3.6em}$Q$: electricity consumption trajectory \\
+}
+\KwOut{$\epsilon$: similarity of $T$ and $Q$}
+\SetVline
+\Begin{
+$\epsilon$ = 0\;
+\For{ $p^i_Q \in Q$} 
+{
+	dis = p^i_T - p^i_Q;\\
+	Q^\prime = \For{$p^i_Q \in Q$} {p^i_Q + dis;\\}
+	$\epsilon^{\prime} = AreaSim(T, Q^\prime)$;\\
+	$\epsilon = \max(\epsilon, \epsilon^{\prime})$;
+}
+\Return{$\epsilon$;} \nllabel{alg:areasim:return} 
+}
+\end{algorithm}
+
+\begin{algorithm}[H]\label{alg:lagging}
+%\nonumber
+%\linesnumbered \dontprintsemicolon
+\KwIn{
+	$T$: economic indicator trajectory \\
+	\hspace{3.6em}$Q$: electricity consumption trajectory \\
+}	
+\KwOut{	$t$: lagging time between $T$ and $Q$}
+\SetVline	
+\Begin{
+\epsilon = 0, $t$ = -1; \\
+Choose part of $T$ as $T^{\prime}$\;
+\For{i \in (-12:12)} {
+	add i to date of each point in $Q$;\\
+	choose part of $Q$ as $Q^{\prime}$, which has same date with $T^{\prime}$;\\
+	\epsilon^{\prime} = AreaSim(T^{\prime}, Q^{\prime});\\
+	\If{\epsilon^{\prime} > \epsilon } {
+		\epsilon = \epsilon^{\prime};\\
+		$t$ = i;\\
+	}\\
+}
+\Return{$t$} \caption{Lagging($T$, $Q$)}
+}
+\end{algorithm}
+\caption{AreaSim FrameWork.}\label{algo:framework}
+\vspace{-1.5em}
+\end{figure}

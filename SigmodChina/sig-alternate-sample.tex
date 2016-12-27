@@ -1,18 +1,29 @@
 \documentclass{sig-alternate-05-2015}
 
-\usepackage{xspace,colortbl,multirow}
 \usepackage{graphicx}
 \usepackage{subfigure}
-\usepackage{epsfig}
-\usepackage{bm}
-\usepackage{siunitx}
-
 \usepackage{balance}
-\usepackage{epstopdf}
-\usepackage{enumerate}
+\usepackage{xspace,colortbl,subfigure,multirow}
+%\usepackage{natbib}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{array}
+\usepackage{verbatim}
+%\usepackage{algorithm} 
+%\usepackage{algorithmic} 
+
+
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+\usepackage[lined,boxed,vlined,ruled]{algorithm2e}
+%\usepackage[dvipdfm]
 \usepackage{hyperref}
-\usepackage{amssymb,amsmath}
-\usepackage{amsfonts}
+
+\pagenumbering{roman}
 
 \begin{document}
 \setcopyright{acmcopyright}
@@ -29,6 +40,7 @@
 }
 
 \maketitle
+
 
 \input{src/sec-abstract.tex}
 \input{src/sec-introduction.tex}

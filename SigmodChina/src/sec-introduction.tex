@@ -9,19 +9,26 @@ But these works cannot focus the similarity of tendency treat the economic devel
 
 From another viewpoint, the economic indicators and electricity consumption can be viewed as time series data, which are similar to the trajectory. A traditional trajectory is a sequence of sample points consisting of geo-location and timestamp. Similarly, both the economic indicators and electricity consumption data consists of the value and timestamp. Therefore, we can compare trajectory similarity using many methods focusing on different characteristics. Our work in this paper would focus on the exploit of internal link between economic indicators and electricity consumption using trajectory similarity, which is much novel comparing to the previous work on the relationship between economic indicators and electricity consumption. 
 
-To address this problem, we propose a trajectory-similarity framework, which allows us to select the top-k closely relevant indicators using the trajectory similarity and verify the lagging time between indicators and electricity consumption. Firstly, we normalize the indicator data and electricity data to make them comparable. We also proposed a similarity method called AreaSim, which need us to calculate the least area enclosed by two trajectories. Since we seek for the similarity of the shape as to the trajectories, we do not need to focus on the original polygon enclosed by trajectories. As shown in Fig~\ref{fig:area-exa}, the original polygon enclosed by trajectory $T$ and $Q$ is such large that the high similarity between these two trajectories cannot be described. Then, we move the trajectory $Q$ vertically getting a set of candidate trajectory set such as $\{Q_1, Q_2, Q_3, \cdots \}$, and from the candidate set, we can find out one trajectory that has the least area with trajectory $T$. Obviously, it is the least area that we should use to calculate the similarity. Meanwhile, it is known that economic activities would last for some time and affect the related metrics which are measured afterward. As elaborated in Fig~\ref{fig:lag-exa}, we want to compare the shape of trajectory $T$ and $Q$. If we move the $Q$ horizontally, we can get the candidate trajectory set such as $\{Q_1, Q_2, \cdots \}$. From the candidate set, we could find a candidate trajectory such as $Q_2$, which has biggest similarity. The time offset between $Q_2$ and $Q$ is the lagging time that exists in two metrics represented by $T$ and $Q$. 
-\begin{figure}
+\begin{figure}[!t]
 	\centering
-	\includegraphics{AreaSim-Example}
+	\vspace{-0.5em}
+	\includegraphics[scale=1]{fig/AreaSim-Example}
+	\vspace{-1.5em}
 	\caption{AreaSim Example}
 	\label{fig:area-exa}
+	\vspace{-1.5em}
 \end{figure}
 
-\begin{figure}
+To address this problem, we propose a trajectory-similarity framework, which allows us to select the top-k closely relevant indicators using the trajectory similarity and verify the lagging time between indicators and electricity consumption. Firstly, we normalize the indicator data and electricity data to make them comparable. We also proposed a similarity method called AreaSim, which need us to calculate the least area enclosed by two trajectories. Since we seek for the similarity of the shape as to the trajectories, we do not need to focus on the original polygon enclosed by trajectories. As shown in Fig~\ref{fig:area-exa}, the original polygon enclosed by trajectory $T$ and $Q$ is such large that the high similarity between these two trajectories cannot be described. Then, we move the trajectory $Q$ vertically getting a set of candidate trajectory set such as $\{Q_1, Q_2, Q_3, \cdots \}$, and from the candidate set, we can find out one trajectory that has the least area with trajectory $T$. Obviously, it is the least area that we should use to calculate the similarity. Meanwhile, it is known that economic activities would last for some time and affect the related metrics which are measured afterward. As elaborated in Fig~\ref{fig:lag-exa}, we want to compare the shape of trajectory $T$ and $Q$. If we move the $Q$ horizontally, we can get the candidate trajectory set such as $\{Q_1, Q_2, \cdots \}$. From the candidate set, we could find a candidate trajectory such as $Q_2$, which has biggest similarity. The time offset between $Q_2$ and $Q$ is the lagging time that exists in two metrics represented by $T$ and $Q$. 
+
+\begin{figure}[!t]
 	\centering
-	\includegraphics{Lagging-Example}
+	\vspace{-0.5em}
+	\includegraphics[scale=1]{fig/Lagging-Example}
+	\vspace{-1.5em}
 	\caption{Lagging Example}
 	\label{fig:lag-exa}
+	\vspace{-1.5em}
 \end{figure}
 
 To summarize, we make the following contributions. 

@@ -2,10 +2,18 @@
 
 % Section Algorithms
 %\vspace{-1em}
-\section{Framework} \label{sec:alg}
-In this section, we describe a novel top-k algorithm based on the area similarity to find the top-k relevant economic indicators. 
-\subsection{Similarity}
 
+\input{src/area-algo.tex}
+\section{Framework} \label{sec:alg}
+In this section, we describe a framework to compute the $AreaSim$ and  find the lagging between electricity consumption and relevant economic indicators.
+
+\subsection{Similarity}
+As defined in Sec~\ref{sec:prem}, we would take advantage of the least area. Obviously, by moving the trajectory, we could get infinite candidate polygons. Trajectory's shape varies so much that it is hard to conclude an universal equation. So, we conduct an approximate method to calculate the least Area $MinS$. Given two trajectories $T$ and $Q$ with $n$ points, we could move trajectory $Q$ vertically so that one point of $Q$ could iteratively coincide with point of $T$ at the same month. Each moving will bring an area of enclosed polygon. Among these results, we select the least area as the $MinS(T, Q)$ and calculate the $AreaSim(T, Q)$.  
+
+\subsection{Lagging}
+According to the economic report, there exists the lagging between the electricity consumption and economic indicators. As the Alg~\ref{alg:lagging} elaborates, in order to find out the lagging, we keep one trajectory stay and move the other trajectory horizontally and then calculate similarity between this new trajectory and another trajectory. We could find the time offset which responses to the highest similarity value. Meanwhile, we could get the time lag of these metrics. 
+
+\subsection{Traditional Method}
 While there are several similarity methods, we can compare other empirical methods with our method. 
 
 DTW(Dynamic Time Warping) is an similarity method that do not require two trajectories to be the same length, and it would allow the time shifting by duplicating the previous element.  Time shifting is beneficial for the shape fitting but it is confusing that allow several points to match one point in another trajectory. Empirically, it is unreasonable to owe economic indicators of several months to the sequence of one electricity consumption of one month.
@@ -62,6 +70,4 @@ where subcost = 0 if $|r1 - s1| \leq \epsilon$ and subcost = 1 otherwise.
 EDR distance notates the distance between two trajectories, so we can define the similarity of two trajectories $EDRSIM$ as:
 \begin{equation}
 	EDRSIM=1 - \frac{EDR(R,S)}{min(|R|, |S|)}
-\end{equation} 
-\subsection{Lagging}
-This paper proposes four similarity metrics:DISSIM, DTWSIM, LCSSSIM, EDRSIM. According to the related report, there exist the lagging between the electricity consumption and economic indicators. In order to verify the lagging, we choose part of the time intervals with time offset, and then calculate the most highest similarity value. Meanwhile, we could get the time lag of these metrics. 
+\end{equation}

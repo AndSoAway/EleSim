@@ -14,39 +14,57 @@ Traditionally, the time series of economic indicators and electricity consumptio
 A time series $T$ is a series of data points indexed in time order, i.e., $T=\{\loci{1}, \loci{2}, \cdots, \loci{|T|}\}$, where $\loci{k}$ is a discrete-time data point and |T| is the number of sample points. Discrete-time data point $\loci{k}$ is composed by $\left(D,V\right)$, where $D$ is the date and $V$ is the value.
 \end{definition}
 
-Two adjacent data point on $T$ form a line and $T$ has $|T|-1$ lines. As to the electricity consumption and economic indicators data, the time unit is month usually. The broken line connecting the time series data can be analyzed as trajectory since it has a sequence of points. We will refer to the \textbf{broken line} as the \textbf{trajectory}.
+Two adjacent data points on $T$ form a line and $T$ has $|T|-1$ lines. As to the electricity consumption and economic indicators data, the time unit is month usually. The broken line connecting the time series data can be analyzed as trajectory since it has a sequence of points. We will refer to the \textbf{broken line} as the \textbf{trajectory}.
 %Suppose we have a series of data in \textit{n} months, each monthly data is composed by \textbf{\(date, val\)}, in which $date$ is the month, and $val$ is the value of economic indicator or electricity consumption. A \textit{segment $T$} is a sequence of data points, i.e.$This place is suspicious$, $T=\{\loci{1}, \loci{2}, \cdots, \loci{|T|}\}$,  where $\loci{k}$ is a data point. And $|T|$ is the number of data points in $T$.
 
-Given two trajectories $T$ and $Q$, there is a enclosed polygon if we connect the starting points and . we would use the area of the polygon enclosed by them to evaluate the relevance. It is very obvious to see that the less the enclosed area of these two trajectories is, the more similar the tendency of these two series is. Also, the time interval should be kept the same in two trajectories. The area enclosed by two trajectories can be defined as:
+Given two trajectories $T$ and $Q$, there is a enclosed polygon if we connect the starting points and ending points. It is very obvious to see that the less the enclosed area of the polygon is, the closer of these two series are. Currently, we assume that the time interval should be kept same in two trajectories. If we draw the vertical line perpendicular to the x-coordinate, the polygon would be divided into several quadrangles. So the area of polygon could be defined as: 
 
-\begin{definition}	
 \begin{displaymath}
-\textbf{S} = \sum_{k=1}^{n-1}\Delta S_k	
+\textbf{Area($T$, $Q$)} = \sum_{k=1}^{n-1}\Delta S_k	
 \end{displaymath}
-\end{definition}
+where n is the the length of $T$ and $Q$.
 
-Each part of the enclosed polygon \textit{$\Delta S_k$} is that the area of shape enclosed by the two segments and vertical coordinates. According to the different tendencies, we can conclude just two cases.
+\textit{$\Delta S_k$} is the area of quadrangle enclosed by the two segments and vertical coordinates. Assuming that $p^k_T(D^k_T, V^K_T)$ and $p^k_Q(D^k_Q, V^k_Q)$ is the k-th point of trajectory $T$ and $Q$, the left edge of quadrangle $a = |V^k_Q - V^k_T|$, and the right edge of quadrangle $b = |V^{k+1}_Q - V^{k+1}_T|$. According to whether segment $p^k_Tp^{k+1}_T$ and $p^k_Qp^{k+1}_Q$ intersect, we can get different calculation formula:   
 \begin{itemize}
-	\item Two segments doesn't intersect. Then, the enclosed part is a trapezoid, of which area is calculated as:
+	\item Two segments do not intersect. Then, the enclosed part is a trapezoid, of which area is calculated as:
 \begin{equation}
-	\Delta S_k = \frac{(a + b) * (t_{k+1} - t_k)}{2}
+	\Delta S_k = \frac{(a + b) * (D^{k+1} - D^k)}{2}
 \end{equation}
-	\item Two segments intersects. Then, we can treat it as the sum of two triangles.
+	\item Two segments intersect at the midpoint. Then, we can treat it as the sum of two triangles. The height of left triangle is $h_i$, while the height of right triangle is $h_j$.
 \begin{equation}
-	\Delta S_k = \frac{a * h_i}{2} + \frac{b * h_j}{2}, h_i + h_j = t_{k+1} - t_k 
+	\Delta S_k = \frac{a * h_i}{2} + \frac{b * h_j}{2}, h_i + h_j = D^{k+1} - D^k
 \end{equation}
 \end{itemize} 
 
-Though we have proposed the area of two segments, it cannot be used to evaluate the similarity of two segments. We want to compare the tendency of two indexes. So, case may be that if two lines goes in the same direction but their distance is very long, we still get the much larger area. So, we can move one of the two lines vertically. With different distances, we would get different area, from which the least area is the most appropriate value to reflect the coincide. So, we could use the notation of MINS as the real area.
-\begin{equation}
-	MINS = \min{\textbf{S}}	
-\end{equation}
+Though we have proposed the enclosed area of two trajectories, it cannot be used to evaluate the similarity as to the shape of trajectories.  We want to compare the trend of two indexes. So, if two lines goes in the same direction but their actual distance is very long, we still get much larger area. 
 
-Given the statistical report, we could know that different indicators exist the time offset. Given two segments, if we move one of them horizontally, we could get different \textbf{MINS}. Among all the results, the time offset corresponding to the least val is a candidate for the real time offset. Once we got the least similarity for economic indicators, we could rank the similarities of these indicators and found the top-k indicators closely connected to the electricity consumption. We can formalize our problem as one top-k problem as follow:
+\begin{figure}[!t]
+	\centering
+	\vspace{-.5em}
+	\includegraphics[scale=2]{fig/ShapeOfTrajectory}
+	\vspace{-2.5em}
+	\caption{Shape Vs. Distance.}
+	\label{fig:shape}
+	\vspace{-1.5em}
+\end{figure}
+
+If we observe the Fig~\ref{fig:shape}, we could find that trajectory $Q$ is highly more similar with $T$ than trajectory $R$. But the distance between trajectory $T$ and $Q$ is much larger, if we use the original area to evaluate the similarity between trajectories, the $R$ is more similar with $T$, which is obviously ridiculous. 
+ 
+To eliminate the disturb of distance, we can keep trajectory $T$ stay and move trajectory $Q$ vertically. By this method, we can get a result set $\mathcal{C} = \{Q_1, Q_2, Q_3, \cdots\}$. With different moving distances, we would get different areas, from which we can select the least enclosed area $MinS$. It is very reasonable to give a conclusion that the shape of two trajectories resemble each other much more as the $MinS$ of them is smaller. We could use the notation of $MinS$ as the true enclose area.
+\begin{equation}\label{eq:mins}
+MinS(T, Q)=\min_{Q^{\prime}\in C} Area(T, Q^{\prime}),
+\end{equation}
+Given the previous notation, we could propose the $AreaSim$ similarity.
 \begin{definition}
-	[[[This part, we can put the top-K problem]]]]
-\end{definition} 
+	Given two trajectories $T$ and $Q$, they have the same points $n$. The AreaSim between $T$ and $Q$ is 
+	\begin{equation} \label{eq:simdef}
+		AreaSim(T, Q) = 1 - \frac{MinS(T, Q)}{n - 1}
+	\end{equation} 
+\end{definition}
 
-\begin{equation}
-AreaSIM(Q, T) = 1 - \frac{\int_{0}^{n}D_{Q,T}(t)dt}{n}	
-\end{equation}
+Given the statistical report, we could know that different indicators exist the time offset because economic activities usually would undergo for some time. Economists call this phenomenon $lagging$. So, the economic indicator calculated in the same month may not have the concise similarity with electricity consumption. To address this problem, we could take advantage of $AreaSim$. Given two trajectories $T$ and $Q$, if we move one of them horizontally, we could get different $AreaSim(T, Q)$. Due to the time offset, we could induct that when we move the trajectories to an appropriate position where they can make up the lagging, these two trajectories could achieve the highest similarity. The time offset corresponding to the highest similarity is the real time offset. 
+
+Once we got the similarity for economic indicators, we could rank the similarities of these indicators and find the top-k economic indicators closely connected to the electricity consumption. We can formalize our problem as one top-k problem as follow:
+\begin{definition}
+	Given an economic indicator set $\mathcal{E}=\{e_1, e_2,$ $\cdots, e_n\}$, where these indicators have its own time series data, find a k-size economic indicator set $\mathcal{R}=\{e^{\prime}_1, e^{\prime}_2, \cdots, e^{\prime}_k\}$ where $e^{\prime}_i$ has higher similarity with electricity consumption $T$, than $e^{\prime}_j$, denoted by AreaSim(T, $e^{\prime}_i$) > AreaSim(T, $e^{\prime}_j$) for $e^{\prime}_i \in \mathcal{R} \text{ and } e^{\prime}_j \in \mathcal{E} - \mathcal{R}$
+\end{definition}
