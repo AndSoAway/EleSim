@@ -11,57 +11,59 @@ In this section, we describe a framework to compute the $AreaSim$ and  find the 
 As defined in Sec~\ref{sec:prem}, we would take advantage of the least area. Obviously, by moving the trajectory, we could get infinite candidate polygons. Trajectory's shape varies so much that it is hard to conclude an universal equation. So, we conduct an approximate method to calculate the least Area $MinS$. Given two trajectories $T$ and $Q$ with $n$ points, we could move trajectory $Q$ vertically so that one point of $Q$ could iteratively coincide with point of $T$ at the same month. Each moving will bring an area of enclosed polygon. Among these results, we select the least area as the $MinS(T, Q)$ and calculate the $AreaSim(T, Q)$.  
 
 \subsection{Lagging}
-According to the economic report, there exists the lagging between the electricity consumption and economic indicators. As the Alg~\ref{alg:lagging} elaborates, in order to find out the lagging, we keep one trajectory stay and move the other trajectory horizontally for some time offset and then calculate similarity between this new trajectory and another trajectory. Because that the economic phenomenon usually has a period of one year, we constrain the time offset to 12 monthes. The negative value means that we move the trajectory left. We could find the time offset which responses to the highest similarity value. This time offset can be seen as the lagging between electricity consumption and economic indicators.
+According to the economic report, there exists the lagging between the electricity consumption and economic indicators. As the Alg~\ref{alg:lagging} elaborates, in order to find out the lagging, we keep one trajectory stay and move the other trajectory horizontally for some time offset and then calculate similarity between this new trajectory and another trajectory. Because that the economic phenomenon usually has a period of one year, we constrain the time offset to 12 months. The negative value means that we move the trajectory left. We could find the time offset which responses to the highest similarity value. This time offset can be seen as the lagging between electricity consumption and economic indicators.
 
 \subsection{Traditional Method}
-While there are several similarity methods, we can compare other empirical methods with our method. 
+The field of trajectory similarity has much more classical works, we can compare several empirical methods with our method. We would introduce them briefly. 
 
-DTW(Dynamic Time Warping) is an similarity method that do not require two trajectories to be the same length, and it would allow the time shifting by duplicating the previous element.  Time shifting is beneficial for the shape fitting but it is confusing that allow several points to match one point in another trajectory. Empirically, it is unreasonable to owe economic indicators of several months to the sequence of one electricity consumption of one month.
+\subsubsection{DTW}
+DTW(Dynamic Time Warping) is an similarity method that do not require two trajectories to be the same length. And it allows the time shifting by duplicating the previous elements. Time shifting is beneficial for the shape fitting but it is confusing because it allows several points to match one point in another trajectory. Empirically, it is unreasonable to match economic indicators of several months to the electricity consumption of one month.
 \begin{equation}
-	DTW(R, S) = \left\{
+	DTW(T, Q) = \left\{
 	\begin{array}{ll}
-		0,  & \text{R and S is empty}  \\
-		\infty,  & \text{R or S is empty}  \\
-		dist(r1, s1) + min & \{DTW(Rest(R), Rest(S)),  \\
-		 DTW(Rest(R), S), & DTW(R, Rest(S))\}, otherwise
+		0,  & \text{T and Q is empty}  \\
+		\infty,  & \text{T or Q is empty}  \\
+		\multicolumn{2}{l}{\text{dist(t1, q1) + \min{DTW(Rest(T), Rest(Q)), DTW(Rest(T), Q), DTW(T, Rest(Q))}}, otherwise} \\
 	\end{array}
 	\right.
 \end{equation} 
-DTW notates the distance between two trajectories, so we can define the DTWSIM based on the DTW distance:
-\begin{definition}
-	DTWSIM(R, S) = 1 - $\frac{DTW(R, S)}{min(\text(|R|, |S|)}$
-\end{definition}
+DTW notates the distance between two trajectories, so we can define the $DTWSIM$ based on the DTW distance:
+\begin{displaymath}
+	DTWSIM(T, Q) = 1 - $\frac{DTW(T, Q)}{min(\text(|T|, |Q|)}$
+\end{displaymath}
 
-LCSS(Longest Common SubSequence) model is an efficient model that can deal with the outliers. Not only that LCSS allows different sampling rates, but also it will omit the points, which are too far away from the other points. LCSS is an variant of the edit distance, value of which notates the count of enough close point-pair. We need to input two parameters:
+\subsubsection{LCSS}
+LCSS(Longest Common SubSequence) model is an efficient model, which can deal with the outliers. Not only that LCSS allows different sampling rates, but also it will omit the points, which are too far away from the other points. LCSS is an variant of the edit distance algorithm, value of which notates the count of enough close point-pair. We need to input two parameters:
 \begin{itemize}
-	\item $\sigma$: the offset of two points
-	\item $\epsilon$: the matching threshold 
+	\item $\sigma$: the threshold of distance between two points
+	\item $\epsilon$: the threshold of index distance 
 \end{itemize} 
+Given these two parameters and two trajectories $T$, $Q$, we can get the $LCSS(T, Q)$ as:
 \begin{equation}
-	LCSS(R, S)_{\epsilon, \sigma} = \left\{
+	LCSS(T, Q)_{\epsilon, \sigma} = \left\{
 	\begin{array}{ll}
 		0, & \text{R or S is empty} \\
-		1 + LCSS_{\epsilon, \sigma}(Head(R), Head(S)), \\
-		\text{if $|r_n - s_m| \leq \sigma and |n - m| \leq \epsilon$} \\
-		max{LCSS_{\epsilon, \sigma}(Head(R), S), LCSS_{\epsilon, \sigma}(R, Head(S))}, & otherwise
+		\multicolumn{2}{l}{\text{1 + LCSS_{\epsilon, \sigma}(Head(T), Head(Q)), if $|t_n - t_m| \leq \sigma and |n - m| \leq \epsilon$}} \\
+		\multicolumn{2}{l}{\text{\max{LCSS_{\epsilon, \sigma}(Head(T), Q), LCSS_{\epsilon, \sigma}(T, Head(Q))}, otherwise}}
 	\end{array}
 	\right.
 \end{equation}
 
-LCSS notates the count of matching point pair, so we can define the LCSSSIM:
+LCSS notates the count of matching point pair in two trajectories, so we can define the $LCSSSIM$:
 \begin{equation}\label{sim:less}
-	LCSSSIM(R,S)=\frac{LCSS_{\epsilon ,\sigma }(R,S)}{\min(R,S)}
+	LCSSSIM(T,Q)=\frac{LCSS_{\epsilon ,\sigma }(T,Q)}{\min(|T|, |Q|)}
 \end{equation}
 
-EDR is another variant of edit distance, which define that the cost of a replace, insert, or delete operation is only 1. Instead of omitting the outliers in the LCSS and using the distance directly in DTW, the EDR reduces effect of the outlier by regulating the distance between a pair of elements to two values, 0 and 1. Like DTW, it also conduct the time shifting method for better shape fitting for two trajectories. EDR distance is defined such:
+\subsubsection{EDR}
+EDR is another variant of edit distance algorithm, which defines that the cost of a replace, insert, or delete operation is only 1. Instead of omitting the outliers in the LCSS and using the distance directly in DTW, the EDR reduces effect of the outlier by regulating the distance between a pair of points to two values, 0 and 1. Like DTW, it also conducts the time shifting method for better shape fitting for two trajectories. Given trajectory $T$ with length n and trajectory $Q$ with length m, EDR distance is defined as:
 \begin{equation}
-	EDR(R, S) = \left\{
+	EDR(T, Q) = \left\{
 	\begin{array}{ll}
 		n & \text{if m = 0} \\
 		m & \text{if n = 0} \\
-		\multicolumn{2}{l}{\text{min\{EDR(Rest(R), Rest(S)) + subcost,}} \\
-		\multicolumn{2}{l}{EDR(Rest(R), S) + 1, } \\
-		\multicolumn{2}{l}{EDR(R, Rest(S)) + 1\}, otherwise}  
+		\multicolumn{2}{l}{\text{min\{EDR(Rest(T), Rest(Q)) + subcost,}} \\
+		\multicolumn{2}{l}{EDR(Rest(T), Q) + 1, } \\
+		\multicolumn{2}{l}{EDR(T, Rest(Q)) + 1\}, otherwise}  
 	\end{array}
 	\right.
 \end{equation}
@@ -69,5 +71,5 @@ where subcost = 0 if $|r1 - s1| \leq \epsilon$ and subcost = 1 otherwise.
 
 EDR distance notates the distance between two trajectories, so we can define the similarity of two trajectories $EDRSIM$ as:
 \begin{equation}
-	EDRSIM=1 - \frac{EDR(R,S)}{min(|R|, |S|)}
+	EDRSIM=1 - \frac{EDR(T,Q)}{min(|T|, |Q|)}
 \end{equation}
