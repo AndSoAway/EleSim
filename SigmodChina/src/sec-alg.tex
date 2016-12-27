@@ -3,7 +3,7 @@
 % Section Algorithms
 %\vspace{-1em}
 
-\input{src/area-algo.tex}
+%\input{src/area-algo.tex}
 \section{Framework} \label{sec:alg}
 In this section, we describe a framework to compute the $AreaSim$ and  find the lagging between electricity consumption and relevant economic indicators.
 
@@ -11,7 +11,7 @@ In this section, we describe a framework to compute the $AreaSim$ and  find the 
 As defined in Sec~\ref{sec:prem}, we would take advantage of the least area. Obviously, by moving the trajectory, we could get infinite candidate polygons. Trajectory's shape varies so much that it is hard to conclude an universal equation. So, we conduct an approximate method to calculate the least Area $MinS$. Given two trajectories $T$ and $Q$ with $n$ points, we could move trajectory $Q$ vertically so that one point of $Q$ could iteratively coincide with point of $T$ at the same month. Each moving will bring an area of enclosed polygon. Among these results, we select the least area as the $MinS(T, Q)$ and calculate the $AreaSim(T, Q)$.  
 
 \subsection{Lagging}
-According to the economic report, there exists the lagging between the electricity consumption and economic indicators. As the Alg~\ref{alg:lagging} elaborates, in order to find out the lagging, we keep one trajectory stay and move the other trajectory horizontally and then calculate similarity between this new trajectory and another trajectory. We could find the time offset which responses to the highest similarity value. Meanwhile, we could get the time lag of these metrics. 
+According to the economic report, there exists the lagging between the electricity consumption and economic indicators. As the Alg~\ref{alg:lagging} elaborates, in order to find out the lagging, we keep one trajectory stay and move the other trajectory horizontally for some time offset and then calculate similarity between this new trajectory and another trajectory. Because that the economic phenomenon usually has a period of one year, we constrain the time offset to 12 monthes. The negative value means that we move the trajectory left. We could find the time offset which responses to the highest similarity value. This time offset can be seen as the lagging between electricity consumption and economic indicators.
 
 \subsection{Traditional Method}
 While there are several similarity methods, we can compare other empirical methods with our method. 
